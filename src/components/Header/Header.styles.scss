@@ -1,0 +1,40 @@
+.header {
+  height: 70px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 6%;
+  z-index: 1000;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .logo {
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}
