@@ -5,7 +5,7 @@ import './Contact.styles.scss';
 const Contact = () => {
   return (
     <section id='contact' className='section section-contact'>
-      <h1 className='section-heading'>Contact</h1>
+      <h1 className='section-heading'>Reach Us</h1>
     </section>
   );
 };
