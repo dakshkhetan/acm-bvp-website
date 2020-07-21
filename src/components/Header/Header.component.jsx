@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link, withRouter } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 import logo from '../../assets/ACM-BVP-logo.jpg';
 
@@ -7,12 +8,13 @@ import './Header.styles.scss';
 
 class Header extends React.Component {
   scrollToTop = () => {
-    scroll.scrollToTop();
+    const { location, history } = this.props;
+    location.pathname === '/' ? scroll.scrollToTop() : history.push('/');
   };
 
   headerOptions = (className) => (
     <React.Fragment>
-      <Link
+      <ScrollLink
         activeClass='active'
         to='home'
         spy={true}
@@ -22,8 +24,8 @@ class Header extends React.Component {
         className={className}
       >
         Home
-      </Link>
-      <Link
+      </ScrollLink>
+      <ScrollLink
         activeClass='active'
         to='about'
         spy={true}
@@ -33,8 +35,14 @@ class Header extends React.Component {
         className={className}
       >
         About
+      </ScrollLink>
+      <Link to='/gallery' className={className}>
+        Gallery
       </Link>
-      <Link
+      <Link to='/dsp' className={className}>
+        DSP
+      </Link>
+      <ScrollLink
         activeClass='active'
         to='contact'
         spy={true}
@@ -44,7 +52,7 @@ class Header extends React.Component {
         className={className}
       >
         Contact
-      </Link>
+      </ScrollLink>
     </React.Fragment>
   );
 
@@ -65,4 +73,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);

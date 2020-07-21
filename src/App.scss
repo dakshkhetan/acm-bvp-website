@@ -5,11 +5,11 @@
     color: #111;
     padding: 0 5%;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       background-color: #e9e9e9;
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background-color: #ffffff;
     }
 
