@@ -1,0 +1,42 @@
+.section-workshops {
+
+  .section-content {
+    display: flex;
+    justify-content: space-around;
+
+    .info {
+      height: 400px;
+      margin-top: 85px;
+
+      p {
+        width: 430px;
+        font-size: 24px;
+      }
+
+      button {
+        width: 300px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 1.55;
+        margin-top: 40px;
+        padding: 8px;
+        border: 2px solid black;
+        border-radius: 40px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
+    .image-container {
+      width: 530px;
+    }
+  }
+}
