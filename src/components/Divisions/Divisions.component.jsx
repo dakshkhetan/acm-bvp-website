@@ -5,7 +5,7 @@ import './Divisions.styles.scss';
 
 const Divisions = () => {
   return (
-    <section id='home' className='section section-divisions'>
+    <section id='divisions' className='section section-divisions'>
       <Fade bottom>
         <h1 className='section-heading'>Divisions</h1>
       </Fade>

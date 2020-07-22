@@ -191,7 +191,7 @@ const CodeOfConduct = () => {
   );
 
   return (
-    <section id='home' className='section section-codeOfConduct'>
+    <section id='codeOfConduct' className='section section-codeOfConduct'>
       <Fade bottom>
         <h1 className='section-heading'>CodeOfConduct</h1>
         {content()}

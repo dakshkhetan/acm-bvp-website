@@ -5,7 +5,7 @@ import './Team.styles.scss';
 
 const Team = () => {
   return (
-    <section id='home' className='section section-team'>
+    <section id='team' className='section section-team'>
       <Fade bottom>
         <h1 className='section-heading'>Meet The Team</h1>
       </Fade>

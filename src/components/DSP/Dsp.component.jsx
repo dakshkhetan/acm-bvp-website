@@ -5,7 +5,7 @@ import './Dsp.styles.scss';
 
 const DSP = () => {
   return (
-    <section id='home' className='section section-dsp'>
+    <section id='dsp' className='section section-dsp'>
       <Fade bottom>
         <h1 className='section-heading'>DSP</h1>
       </Fade>

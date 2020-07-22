@@ -9,7 +9,7 @@ import DSP from './components/DSP/Dsp.component';
 import CodeOfConduct from './components/CodeOfConduct/CodeOfConduct.component';
 
 import './index.css';
-import About from './components/About/About.component';
+import Workshops from './components/Workshops/Workshops.component';
 
 class Root extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class Root extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/' component={App} />
-          <Route path='/about' component={About} />
+          <Route path='/workshops' component={Workshops} />
           <Route path='/gallery' component={Gallery} />
           <Route path='/dsp' component={DSP} />
           <Route path='/code-of-conduct' component={CodeOfConduct} />

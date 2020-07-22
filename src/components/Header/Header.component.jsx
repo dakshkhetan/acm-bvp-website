@@ -27,14 +27,14 @@ class Header extends React.Component {
       </ScrollLink>
       <ScrollLink
         activeClass='active'
-        to='about'
+        to='workshops'
         spy={true}
         smooth={true}
         offset={-70}
         duration={500}
         className={className}
       >
-        About
+        Workshops
       </ScrollLink>
       <Link to='/gallery' className={className}>
         Gallery
