@@ -1,11 +1,13 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
+import Footer from '../Footer/Footer.component';
+
 import './CodeOfConduct.styles.scss';
 
 const CodeOfConduct = () => {
   const content = () => (
-    <div className='content'>
+    <div className='section-content'>
       <h2>1. Purpose</h2>
       <p>
         A primary goal of ACM BVP is to be inclusive to the largest number of
@@ -191,12 +193,15 @@ const CodeOfConduct = () => {
   );
 
   return (
-    <section id='codeOfConduct' className='section section-codeOfConduct'>
-      <Fade bottom>
-        <h1 className='section-heading'>CodeOfConduct</h1>
+    <React.Fragment>
+      <section id='codeOfConduct' className='section section-codeOfConduct'>
+        <Fade bottom>
+          <h1 className='section-heading'>Code of Conduct</h1>
+        </Fade>
         {content()}
-      </Fade>
-    </section>
+      </section>
+      <Footer />
+    </React.Fragment>
   );
 };
 

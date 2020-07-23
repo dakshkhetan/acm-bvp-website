@@ -1,0 +1,20 @@
+.section-codeOfConduct {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111;
+  padding: 0 5%;
+
+  .section-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+
+  .section-content {
+    width: 90%;
+    margin-bottom: 80px;
+  }
+}

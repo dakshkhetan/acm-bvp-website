@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
 
 import App from './App';
 import Header from './components/Header/Header.component';
@@ -22,6 +27,7 @@ class Root extends React.Component {
           <Route path='/dsp' component={DSP} />
           <Route path='/contact' component={Contact} />
           <Route path='/code-of-conduct' component={CodeOfConduct} />
+          <Redirect to='/' />
         </Switch>
       </Router>
     );
