@@ -4,12 +4,13 @@
   align-items: center;
 
   .logo-container {
-    width: 650px;
+    width: 550px;
     margin-top: 10px;
 
     img {
       height: 100%;
       width: 100%;
+      transform: scale(1.2);
     }
   }
 
