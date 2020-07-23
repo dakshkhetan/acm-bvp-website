@@ -1,0 +1,62 @@
+.section-contact {
+  height: 700px !important;
+
+  .section-content {
+
+    .info {
+      width: 650px;
+      margin-top: 45px;
+
+      h2 {
+        font-size: 1.6rem;
+        color: #539dfe;
+        font-weight: bold;
+      }
+
+      .text {
+        font-size: 1.2rem !important;
+      }
+
+      .text-2 {
+        margin-top: -10px;
+      }
+
+      .mail-btn {
+        margin-top: 65px;
+
+        a {
+          width: 150px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.24rem;
+          line-height: 1.55;
+          padding: 7px 12px;
+          border: 2px solid black;
+          border-radius: 40px;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+
+    }
+
+    .image-container {
+      height: 280px;
+      position: relative;
+
+      .illustration {
+        width: 800px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
