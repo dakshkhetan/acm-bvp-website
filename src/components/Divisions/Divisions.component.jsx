@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 import image1 from '../../assets/ACM-W-logo.png';
 import image2 from '../../assets/ACM-Parivartan-logo.png';
-import { ReactComponent as Divider } from './../../assets/divider.svg';
+import { ReactComponent as Divider } from './../../assets/illustrations/divider.svg';
 
 import './Divisions.styles.scss';
 

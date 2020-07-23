@@ -6,14 +6,14 @@ import {
   faGithub
 } from '@fortawesome/free-brands-svg-icons';
 
-import DisplayImage from '../../assets/display-pic.png';
+import DisplayImagePlaceholder from '../../assets/display-pics/displayPicTemplate.png';
 import './Person.styles.scss';
 
 const Person = ({ member }) => {
   const {
     name,
     position,
-    // displayPicSrc,
+    displayPicSrc,
     linkedInURL,
     githubURL,
     twitterURL
@@ -23,7 +23,11 @@ const Person = ({ member }) => {
     <div className='member'>
       <div className='img-container'>
         <div className='display-pic'>
-          <img src={DisplayImage} alt='profile pic' />
+          {displayPicSrc ? (
+            <img src={displayPicSrc} alt='profile pic' />
+          ) : (
+            <img src={DisplayImagePlaceholder} alt='profile pic' />
+          )}
         </div>
       </div>
       <span className='name'>{name}</span>

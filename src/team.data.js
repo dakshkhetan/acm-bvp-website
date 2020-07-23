@@ -33,7 +33,7 @@ export const TeamData = [
     linkedInURL: 'https://www.linkedin.com/in/dakshkhetan',
     githubURL: 'https://github.com/dakshkhetan',
     twitterURL: 'https://twitter.com/dakshkhetan',
-    displayPicSrc: ''
+    displayPicSrc: require('./assets/display-pics/daksh.jpg')
   },
   {
     key: '5',
