@@ -1,0 +1,32 @@
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .img-container {
+
+    .display-pic {
+
+      img {
+        // width: 100%;
+        // height: 100%;
+      }
+    }
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .position {
+    font-size: 1rem;
+    color: #539dfe;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}

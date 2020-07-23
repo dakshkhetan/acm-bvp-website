@@ -1,0 +1,25 @@
+.section-team {
+  height: auto !important;
+
+  .section-content {
+    text-align: center;
+
+    .members {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .image-container {
+      margin-top: 65px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: -40px;
+
+      .illustration {
+        width: 300px;
+      }
+    }
+  }
+}
