@@ -1,0 +1,48 @@
+.section-divisions {
+
+  .section-heading {
+    margin-bottom: 10px;
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.32rem;
+
+    .divider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 510px;
+      margin-top: 60px;
+    }
+
+    .info-acmw, .info-acmp {
+      width: 600px;
+    }
+
+    .image-container {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 380px;
+      }
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+
+      p {
+        width: 80%;
+        line-height: 1.6;
+      }
+    }
+  }
+}
