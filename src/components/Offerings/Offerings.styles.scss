@@ -1,0 +1,54 @@
+.section-offerings {
+  height: 720px !important;
+  position: relative;
+  text-align: center;
+
+  .section-heading {
+    margin-bottom: 10px;
+  }
+
+  .sub-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -16px 0 15px 0;
+
+    p {
+      width: 350px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: center;
+
+    .tech-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 60px;
+
+      .image-container {
+        margin: 0 50px;
+
+        img {
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: 5px solid #539dfe;
+        }
+      }
+    }
+
+    .illustration-container {
+
+      .illustration {
+        width: 220px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        margin-top: -30px;
+      }
+    }
+  }
+}
