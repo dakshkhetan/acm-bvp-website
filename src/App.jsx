@@ -4,7 +4,7 @@ import React from 'react';
 import Hero from './components/Hero/Hero.component';
 import Workshops from './components/Workshops/Workshops.component';
 import Divisions from './components/Divisions/Divisions.component';
-import Offerings from './components/Offerings/Offerings.component';
+import LatestTrends from './components/LatestTrends/LatestTrends.component';
 import Team from './components/Team/Team.component';
 import Contact from './components/Contact/Contact.component';
 import Footer from './components/Footer/Footer.component';
@@ -18,7 +18,7 @@ const App = () => {
       <Hero />
       <Workshops />
       <Divisions />
-      <Offerings />
+      <LatestTrends />
       <Team />
       <Contact />
       <Footer />

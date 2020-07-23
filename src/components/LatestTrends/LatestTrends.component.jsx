@@ -9,11 +9,11 @@ import RoboticsIcon from '../../assets/technology/robotics-icon.png';
 import BlockchainIcon from '../../assets/technology/blockchain-icon.png';
 import { ReactComponent as Illustration } from '../../assets/illustrations/reading-book.svg';
 
-import './Offerings.styles.scss';
+import './LatestTrends.styles.scss';
 
-const Offerings = () => {
+const LatestTrends = () => {
   return (
-    <section id='offerings' className='section section-offerings'>
+    <section id='latest-trends' className='section section-latestTrends'>
       <Fade bottom>
         <h1 className='section-heading'>Latest Trends</h1>
         <div className='sub-heading'>
@@ -51,4 +51,4 @@ const Offerings = () => {
   );
 };
 
-export default Offerings;
+export default LatestTrends;
