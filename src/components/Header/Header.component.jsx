@@ -12,36 +12,9 @@ class Header extends React.Component {
     location.pathname === '/' ? scroll.scrollToTop() : history.push('/');
   };
 
-  headerOptions = (className) => (
-    <React.Fragment>
-      <ScrollLink
-        activeClass='active'
-        to='home'
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        className={className}
-      >
-        Home
-      </ScrollLink>
-      <ScrollLink
-        activeClass='active'
-        to='workshops'
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        className={className}
-      >
-        Workshops
-      </ScrollLink>
-      <Link to='/gallery' className={className}>
-        Gallery
-      </Link>
-      <Link to='/dsp' className={className}>
-        DSP
-      </Link>
+  contactOption = () => {
+    const { location, history } = this.props;
+    return location.pathname === '/' ? (
       <ScrollLink
         activeClass='active'
         to='contact'
@@ -49,10 +22,29 @@ class Header extends React.Component {
         smooth={true}
         offset={-70}
         duration={500}
-        className={className}
+        className='option'
       >
         Contact
       </ScrollLink>
+    ) : (
+      <span className='option' onClick={() => history.push('/contact')}>
+        Contact
+      </span>
+    );
+  };
+
+  headerOptions = (className) => (
+    <React.Fragment>
+      <span className={className} onClick={() => this.scrollToTop()}>
+        Home
+      </span>
+      <Link to='/gallery' className={className}>
+        Gallery
+      </Link>
+      <Link to='/dsp' className={className}>
+        DSP
+      </Link>
+      {this.contactOption()}
     </React.Fragment>
   );
 

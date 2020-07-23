@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import { ReactComponent as Image } from '../../assets/illustrations/contact_img.svg';
 
@@ -7,23 +8,35 @@ import './Contact.styles.scss';
 const Contact = () => {
   return (
     <section id='contact' className='section section-contact'>
-      <h1 className='section-heading'>Reach Us</h1>
+      <Fade bottom>
+        <h1 className='section-heading'>Reach Us</h1>
+      </Fade>
       <div className='section-content'>
         <div className='info'>
-          <h2 className='heading'>ADDRESS</h2>
-          <p className='text'>A-4, Paschim Vihar, New Delhi - 110063</p>
-          <p className='text text-2'>
-            (In front of Paschim Vihar East Metro Station)
-          </p>
-          <div className='mail-btn'>
-            <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
-          </div>
+          <Fade bottom delay={200}>
+            <h2 className='heading'>ADDRESS</h2>
+          </Fade>
+          <Fade bottom delay={300}>
+            <p className='text'>A-4, Paschim Vihar, New Delhi - 110063</p>
+          </Fade>
+          <Fade bottom delay={400}>
+            <p className='text text-2'>
+              (In front of Paschim Vihar East Metro Station)
+            </p>
+          </Fade>
+          <Fade bottom delay={500}>
+            <div className='mail-btn'>
+              <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
+            </div>
+          </Fade>
         </div>
-        <div className='image-container'>
-          <div className='illustration'>
-            <Image />
+        <Fade delay={100}>
+          <div className='image-container'>
+            <div className='illustration'>
+              <Image />
+            </div>
           </div>
-        </div>
+        </Fade>
       </div>
     </section>
   );

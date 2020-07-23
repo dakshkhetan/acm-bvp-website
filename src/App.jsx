@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import Header from './components/Header/Header.component';
 import Hero from './components/Hero/Hero.component';
 import Workshops from './components/Workshops/Workshops.component';
 import Divisions from './components/Divisions/Divisions.component';
@@ -14,7 +13,6 @@ import './App.scss';
 const App = () => {
   return (
     <div className='App'>
-      {/* <Header /> */}
       <Hero />
       <Workshops />
       <Divisions />
