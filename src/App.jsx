@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Hero from './components/Hero/Hero.component';
 import Workshops from './components/Workshops/Workshops.component';
@@ -11,6 +11,10 @@ import Footer from './components/Footer/Footer.component';
 import './App.scss';
 
 const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='App'>
       <Hero />

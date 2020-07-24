@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
 
 import Footer from '../Footer/Footer.component';
 
@@ -8,6 +9,10 @@ import { ReactComponent as Image } from '../../assets/illustrations/contact_img.
 import './Contact.styles.scss';
 
 const Contact = ({ location }) => {
+  useEffect(() => {
+    scroll.scrollToTop();
+  }, []);
+
   const addFooterCheck = () => {
     return location.pathname === '/contact' && <Footer />;
   };

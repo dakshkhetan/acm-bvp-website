@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import { animateScroll as scroll } from 'react-scroll';
 
 import Footer from '../Footer/Footer.component';
 
 import './CodeOfConduct.styles.scss';
 
 const CodeOfConduct = () => {
+  useEffect(() => {
+    scroll.scrollToTop();
+  }, []);
+
   const content = () => (
     <div className='section-content'>
       <h2>1. Purpose</h2>
@@ -37,90 +42,87 @@ const CodeOfConduct = () => {
       <p>
         The following behaviors are expected and requested of all community
         members:
-        <ul>
-          <li>
-            Participate in an authentic and active way. In doing so, you
-            contribute to the health and longevity of this community.
-          </li>
-
-          <li>
-            Exercise consideration and respect in your speech and actions.
-          </li>
-
-          <li>Attempt collaboration before conflict.</li>
-
-          <li>
-            Refrain from demeaning, discriminatory, or harassing behavior and
-            speech.
-          </li>
-
-          <li>
-            Be mindful of your surroundings and of your fellow participants.
-            Alert community leaders if you notice a dangerous situation, someone
-            in distress, or violations of this Code of Conduct, even if they
-            seem inconsequential.
-          </li>
-
-          <li>
-            Remember that community event venues may be shared with members of
-            the public; please be respectful to all patrons of these locations.
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          Participate in an authentic and active way. In doing so, you
+          contribute to the health and longevity of this community.
+        </li>
+
+        <li>Exercise consideration and respect in your speech and actions.</li>
+
+        <li>Attempt collaboration before conflict.</li>
+
+        <li>
+          Refrain from demeaning, discriminatory, or harassing behavior and
+          speech.
+        </li>
+
+        <li>
+          Be mindful of your surroundings and of your fellow participants. Alert
+          community leaders if you notice a dangerous situation, someone in
+          distress, or violations of this Code of Conduct, even if they seem
+          inconsequential.
+        </li>
+
+        <li>
+          Remember that community event venues may be shared with members of the
+          public; please be respectful to all patrons of these locations.
+        </li>
+      </ul>
 
       <h2>4. Unacceptable Behavior</h2>
       <p>
         The following behaviors are considered harassment and are unacceptable
         within our community:
-        <ul>
-          <li>
-            Violence, threats of violence or violent language directed against
-            another person.
-          </li>
-
-          <li>
-            Sexist, racist, ableist or otherwise discriminatory jokes and
-            language.
-          </li>
-
-          <li>Posting or displaying sexually explicit or violent material.</li>
-
-          <li>
-            Posting or threatening to post other people’s personally identifying
-            information ("doxing").
-          </li>
-
-          <li>
-            Personal insults, particularly those related to gender, sexual
-            orientation, race, religion, or disability.
-          </li>
-
-          <li>Inappropriate photography or recording.</li>
-
-          <li>
-            Inappropriate physical contact. You should have someone’s consent
-            before touching them.
-          </li>
-
-          <li>
-            Unwelcome sexual attention. This includes, sexualized comments or
-            jokes; inappropriate touching, groping, and unwelcomed sexual
-            advances.
-          </li>
-
-          <li>
-            Deliberate intimidation, stalking or following (online or in
-            person).
-          </li>
-
-          <li>Advocating for, or encouraging, any of the above behavior.</li>
-
-          <li>
-            Sustained disruption of community events, including talks and
-            presentations.
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          Violence, threats of violence or violent language directed against
+          another person.
+        </li>
+
+        <li>
+          Sexist, racist, ableist or otherwise discriminatory jokes and
+          language.
+        </li>
+
+        <li>Posting or displaying sexually explicit or violent material.</li>
+
+        <li>
+          Posting or threatening to post other people’s personally identifying
+          information ("doxing").
+        </li>
+
+        <li>
+          Personal insults, particularly those related to gender, sexual
+          orientation, race, religion, or disability.
+        </li>
+
+        <li>Inappropriate photography or recording.</li>
+
+        <li>
+          Inappropriate physical contact. You should have someone’s consent
+          before touching them.
+        </li>
+
+        <li>
+          Unwelcome sexual attention. This includes, sexualized comments or
+          jokes; inappropriate touching, groping, and unwelcomed sexual
+          advances.
+        </li>
+
+        <li>
+          Deliberate intimidation, stalking or following (online or in person).
+        </li>
+
+        <li>Advocating for, or encouraging, any of the above behavior.</li>
+
+        <li>
+          Sustained disruption of community events, including talks and
+          presentations.
+        </li>
+      </ul>
 
       <h2>5. Weapons Policy</h2>
       <p>
