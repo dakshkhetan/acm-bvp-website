@@ -12,7 +12,7 @@
     text-align: center;
     font-size: 2.8rem;
     padding-top: 40px;
-    margin-top: 0;
+    margin: 0 0 60px;
   }
 
   .section-content {
@@ -26,8 +26,15 @@
         align-items: center;
         margin-top: 50px;
 
+        h2 {
+          font-size: 1.75rem;
+        }
+
         p {
           width: 50%;
+          font-size: 1.2rem;
+          line-height: 1.8;
+          margin-top: -5px;
         }
       }
     }
@@ -36,7 +43,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 50px;
+      margin: 50px 0 100px;
 
       .divider {
         width: 220px;
@@ -47,10 +54,10 @@
   .illustration-container {
 
     .illustration {
-      width: 200px;
+      width: 300px;
       position: absolute;
-      right: 20px;
-      top: 25px;
+      right: 30px;
+      bottom: -90px;
     }
   }
 }
