@@ -25,11 +25,17 @@ const Gallery = () => {
 
         <div className='section-content'>
           <div className='workshop-container workshop-1'>
-            <Carousel />
+            <Fade delay={100}>
+              <Carousel />
+            </Fade>
 
             <div className='info'>
-              <h2>{workshops[0].title}</h2>
-              <p>{workshops[0].details}</p>
+              <Fade bottom delay={300}>
+                <h2>{workshops[0].title}</h2>
+              </Fade>
+              <Fade bottom delay={200}>
+                <p>{workshops[0].details}</p>
+              </Fade>
             </div>
           </div>
 
@@ -37,12 +43,18 @@ const Gallery = () => {
             <Divider className='divider' />
           </div>
 
-          <div className='workshop-container workshop-2'>
-            <Carousel />
+          <div className='workshop-container workshop-1'>
+            <Fade bottom delay={100}>
+              <Carousel />
+            </Fade>
 
             <div className='info'>
-              <h2>{workshops[1].title}</h2>
-              <p>{workshops[1].details}</p>
+              <Fade bottom delay={300}>
+                <h2>{workshops[1].title}</h2>
+              </Fade>
+              <Fade bottom delay={200}>
+                <p>{workshops[1].details}</p>
+              </Fade>
             </div>
           </div>
 
@@ -50,12 +62,18 @@ const Gallery = () => {
             <Divider className='divider' />
           </div>
 
-          <div className='workshop-container workshop-3'>
-            <Carousel />
+          <div className='workshop-container workshop-1'>
+            <Fade bottom delay={100}>
+              <Carousel />
+            </Fade>
 
             <div className='info'>
-              <h2>{workshops[2].title}</h2>
-              <p>{workshops[2].details}</p>
+              <Fade bottom delay={300}>
+                <h2>{workshops[2].title}</h2>
+              </Fade>
+              <Fade bottom delay={200}>
+                <p>{workshops[2].details}</p>
+              </Fade>
             </div>
           </div>
 
@@ -63,12 +81,18 @@ const Gallery = () => {
             <Divider className='divider' />
           </div>
 
-          <div className='workshop-container workshop-4'>
-            <Carousel />
+          <div className='workshop-container workshop-1'>
+            <Fade bottom delay={100}>
+              <Carousel />
+            </Fade>
 
             <div className='info'>
-              <h2>{workshops[3].title}</h2>
-              <p>{workshops[3].details}</p>
+              <Fade bottom delay={300}>
+                <h2>{workshops[3].title}</h2>
+              </Fade>
+              <Fade bottom delay={200}>
+                <p>{workshops[3].details}</p>
+              </Fade>
             </div>
           </div>
 
@@ -76,12 +100,18 @@ const Gallery = () => {
             <Divider className='divider' />
           </div>
 
-          <div className='workshop-container workshop-5'>
-            <Carousel />
+          <div className='workshop-container workshop-1'>
+            <Fade bottom delay={100}>
+              <Carousel />
+            </Fade>
 
             <div className='info'>
-              <h2>{workshops[4].title}</h2>
-              <p>{workshops[4].details}</p>
+              <Fade bottom delay={300}>
+                <h2>{workshops[4].title}</h2>
+              </Fade>
+              <Fade bottom delay={200}>
+                <p>{workshops[4].details}</p>
+              </Fade>
             </div>
           </div>
 
