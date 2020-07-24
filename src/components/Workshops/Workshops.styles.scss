@@ -13,8 +13,9 @@
         font-size: 1.4rem;
       }
 
-      button {
+      .link-btn {
         width: 300px;
+        text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
         line-height: 1.55;
@@ -30,7 +31,10 @@
 
         &:hover {
           background-color: black;
-          color: white;
+
+          a {
+            color: white;
+          }
         }
       }
     }

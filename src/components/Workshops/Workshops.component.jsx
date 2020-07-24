@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as Image } from '../../assets/workshopSVG.svg';
 
@@ -21,7 +22,9 @@ const Workshops = () => {
             </p>
           </Fade>
           <Fade bottom delay={250}>
-            <button>Check More Such Events</button>
+            <div className='link-btn'>
+              <Link to='/gallery'>Check More Such Events</Link>
+            </div>
           </Fade>
         </div>
         <Fade right delay={100}>
