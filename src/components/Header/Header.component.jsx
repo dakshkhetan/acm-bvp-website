@@ -22,12 +22,12 @@ class Header extends React.Component {
         smooth={true}
         offset={-70}
         duration={500}
-        className='option'
+        className='option hover'
       >
         Contact
       </ScrollLink>
     ) : (
-      <span className='option' onClick={() => history.push('/contact')}>
+      <span className='option hover' onClick={() => history.push('/contact')}>
         Contact
       </span>
     );
@@ -35,13 +35,13 @@ class Header extends React.Component {
 
   headerOptions = (className) => (
     <React.Fragment>
-      <span className={className} onClick={() => this.scrollToTop()}>
+      <span className={`${className} hover`} onClick={() => this.scrollToTop()}>
         Home
       </span>
-      <Link to='/gallery' className={className}>
+      <Link to='/gallery' className={`${className} hover`}>
         Gallery
       </Link>
-      <Link to='/dsp' className={className}>
+      <Link to='/dsp' className={`${className} hover`}>
         DSP
       </Link>
       {this.contactOption()}
@@ -51,7 +51,7 @@ class Header extends React.Component {
   render() {
     return (
       <nav className='header'>
-        <div className='logo-container' href='/'>
+        <div className='logo-container'>
           <img
             src={logo}
             alt='logo'

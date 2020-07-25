@@ -35,6 +35,46 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
+
+      &:hover {
+        cursor: pointer;
+
+        &.hover {
+
+          &:before,
+          &:after {
+            width: 50%;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .hover {
+      position: relative;
+      transition: all 0.2s ease-in-out;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        width: 0px;
+        height: 5px;
+        margin: 2px 0 0;
+        transition: all 0.2s ease-in-out;
+        transition-duration: 0.5s;
+        opacity: 0;
+        background-color: darken(#539DFE, 5%);
+      }
+
+      &:before {
+        left: 40%;
+      }
+
+      &:after {
+        right: 40%;
+      }
     }
   }
 }
