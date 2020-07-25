@@ -24,4 +24,10 @@
     font-size: 2.2rem;
     cursor: pointer;
   }
+
+  canvas {
+    height: 760px !important;
+    top: unset !important;
+    opacity: 0.3;
+  }
 }

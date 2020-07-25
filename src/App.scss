@@ -13,6 +13,10 @@
       background-color: #ffffff;
     }
 
+    &:nth-child(1) {
+      background-color: unset;
+    }
+
     .section-heading {
       text-align: center;
       font-size: 2.8rem;
