@@ -17,7 +17,7 @@ const Carousel = () => {
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true,
+    // pauseOnHover: true,
     // variableWidth: true,
     responsive: [
       {

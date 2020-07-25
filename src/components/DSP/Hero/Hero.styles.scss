@@ -1,0 +1,32 @@
+.section-dsp-hero {
+  height: 760px !important;
+  display: flex;
+  flex-direction: column;
+
+  .section-content {
+    display: flex;
+    justify-content: space-around;
+
+    .info {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.65;
+      }
+    }
+
+    .image-container {
+      width: 420px;
+    }
+  }
+}
