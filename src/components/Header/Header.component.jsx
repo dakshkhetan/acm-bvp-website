@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
-import logo from '../../assets/ACM-BVP-logo.jpg';
+import logo from '../../assets/acm-logo/ACM-BVP-logo.jpg';
 
 import './Header.styles.scss';
 

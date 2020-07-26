@@ -1,7 +1,7 @@
 export const TeamData = [
   {
     key: '1',
-    name: 'Rasansha',
+    name: 'Rasansha Luthra',
     position: 'Chairperson ACM',
     linkedInURL: '/',
     githubURL: '/',

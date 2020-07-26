@@ -5,7 +5,8 @@ import { animateScroll as scroll } from 'react-scroll';
 
 import Footer from '../Footer/Footer.component';
 
-import { ReactComponent as Image } from '../../assets/illustrations/contact_img.svg';
+import { ReactComponent as Image } from '../../assets/illustrations/contact.svg';
+
 import './Contact.styles.scss';
 
 const Contact = ({ location }) => {

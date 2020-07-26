@@ -6,8 +6,8 @@ import { workshops } from '../../workshops.data';
 import Carousel from '../Carousel/Carousel.component';
 import Footer from '../Footer/Footer.component';
 
-import { ReactComponent as Divider } from '../../assets/section-divider.svg';
-import { ReactComponent as Illustration } from '../../assets/illustrations/event1.svg';
+import { ReactComponent as Divider } from '../../assets/illustrations/section-divider.svg';
+import { ReactComponent as Illustration } from '../../assets/illustrations/event.svg';
 
 import './Gallery.styles.scss';
 

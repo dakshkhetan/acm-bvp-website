@@ -1,8 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import image1 from '../../assets/ACM-W-logo.png';
-import image2 from '../../assets/ACM-Parivartan-logo.png';
+import image1 from '../../assets/acm-logo/ACM-W-logo.png';
+import image2 from '../../assets/acm-logo/ACM-Parivartan-logo.png';
 import { ReactComponent as Divider } from './../../assets/illustrations/divider.svg';
 
 import './Divisions.styles.scss';

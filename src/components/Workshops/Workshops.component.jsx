@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Image } from '../../assets/workshopSVG.svg';
+import { ReactComponent as Image } from '../../assets/worskshop-section/workshop.svg';
 
 import './Workshops.styles.scss';
 

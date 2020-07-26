@@ -4,7 +4,8 @@ import Fade from 'react-reveal/Fade';
 import { TeamData } from '../../team.data';
 import Person from '../Person/Person.component';
 
-import { ReactComponent as Illustration } from '../../assets/illustrations/team_img.svg';
+import { ReactComponent as Illustration } from '../../assets/illustrations/team.svg';
+
 import './Team.styles.scss';
 
 const Team = () => {

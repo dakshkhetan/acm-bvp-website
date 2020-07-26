@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import { ReactComponent as Image } from '../../../assets/ACM-DSP.svg';
+import { ReactComponent as Image } from '../../../assets/acm-logo/ACM-DSP.svg';
 
 import './Hero.styles.scss';
 
