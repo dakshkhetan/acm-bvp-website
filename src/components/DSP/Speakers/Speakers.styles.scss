@@ -95,4 +95,39 @@
       width: 150px;
     }
   }
+
+  @media only screen and (max-width : 425px) {
+
+    .section-content {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .speaker {
+        width: 95%;
+
+        .image-container {
+          width: 140px;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+
+          &.name {
+            font-size: 1.3rem;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .illustration-container {
+      display: none;
+    }
+  }
 }
