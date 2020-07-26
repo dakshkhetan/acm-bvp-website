@@ -44,4 +44,21 @@
       margin-top: -60px;
     }
   }
+
+  @media only screen and (max-width : 425px) {
+    height: 95vh !important;
+
+    .logo-container {
+      width: 100%;
+    }
+
+    .hero-heading {
+      font-size: 1.75rem !important;
+    }
+
+    .hero-icon {
+      margin-top: 30px;
+      font-size: 1.8rem;
+    }
+  }
 }

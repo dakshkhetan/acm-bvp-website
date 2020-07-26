@@ -76,4 +76,34 @@
       }
     }
   }
+
+  @media only screen and (max-width : 425px) {
+
+    .section-content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 60px;
+
+      .info {
+        align-items: center;
+        margin-top: 0;
+
+        p {
+          margin-top: 10px;
+          text-align: center;
+        }
+
+        .link-btn {
+          width: 55%;
+          font-size: 1rem;
+          margin-top: 20px;
+        }
+      }
+
+      .image-container {
+        width: 300px;
+      }
+    }
+  }
 }

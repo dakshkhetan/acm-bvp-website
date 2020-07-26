@@ -73,4 +73,43 @@
       }
     }
   }
+
+  @media only screen and (max-width : 425px) {
+
+    .sub-heading {
+
+      p {
+        width: 75%;
+        font-size: 1rem;
+      }
+    }
+
+    .section-content {
+
+      .tech-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+
+        .image-container {
+          width: 60%;
+          margin: 0 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .illustration-container {
+
+      .illustration {
+        width: 65px;
+        right: 5px;
+        margin-top: -10px;
+      }
+    }
+  }
 }

@@ -24,25 +24,31 @@ const Contact = ({ location }) => {
         <Fade bottom>
           <h1 className='section-heading'>Reach Us</h1>
         </Fade>
+
         <div className='section-content'>
-          <div className='info'>
-            <Fade bottom delay={200}>
-              <h2 className='heading'>ADDRESS</h2>
-            </Fade>
-            <Fade bottom delay={300}>
-              <p className='text'>A-4, Paschim Vihar, New Delhi - 110063</p>
-            </Fade>
-            <Fade bottom delay={400}>
-              <p className='text text-2'>
-                (In front of Paschim Vihar East Metro Station)
-              </p>
-            </Fade>
-            <Fade bottom delay={500}>
-              <div className='mail-btn'>
-                <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
-              </div>
-            </Fade>
+          <div className='info-container'>
+            <div className='info'>
+              <Fade bottom delay={200}>
+                <h2 className='heading'>ADDRESS</h2>
+              </Fade>
+
+              <Fade bottom delay={300}>
+                <p className='text'>A-4, Paschim Vihar, New Delhi - 110063</p>
+              </Fade>
+              <Fade bottom delay={400}>
+                <p className='text text-2'>
+                  (In front of Paschim Vihar East Metro Station)
+                </p>
+              </Fade>
+
+              <Fade bottom delay={500}>
+                <div className='mail-btn'>
+                  <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
+                </div>
+              </Fade>
+            </div>
           </div>
+
           <Fade delay={100}>
             <div className='image-container'>
               <div className='illustration'>
@@ -52,6 +58,7 @@ const Contact = ({ location }) => {
           </Fade>
         </div>
       </section>
+
       {addFooterCheck()}
     </React.Fragment>
   );

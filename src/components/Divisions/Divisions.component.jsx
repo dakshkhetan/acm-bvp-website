@@ -13,6 +13,7 @@ const Divisions = () => {
       <Fade bottom>
         <h1 className='section-heading'>Divisions</h1>
       </Fade>
+      
       <div className='section-content'>
         <div className='info-acmw'>
           <Fade bottom delay={150}>
@@ -30,7 +31,9 @@ const Divisions = () => {
             </div>
           </Fade>
         </div>
+
         <Divider className='divider' />
+
         <div className='info-acmp'>
           <Fade bottom delay={150}>
             <div className='image-container'>

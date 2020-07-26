@@ -45,4 +45,25 @@
       }
     }
   }
+
+  @media only screen and (max-width : 425px) {
+
+    .section-content {
+
+      .members {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
+
+      .image-container {
+        height: 100%;
+        margin: 25px 0 -40px;
+
+        .illustration {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
