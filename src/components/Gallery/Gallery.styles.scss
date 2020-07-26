@@ -60,4 +60,82 @@
       bottom: -90px;
     }
   }
+
+  @media only screen and (max-width : 768px) {
+
+    .section-content {
+      padding-bottom: 150px;
+
+      .workshop-container {
+
+        .info {
+
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            width: 80%;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .divider-container {
+        margin: 50px 0 90px;
+
+        .divider {
+          width: 30%;
+        }
+      }
+    }
+
+    .illustration-container {
+
+      .illustration {
+        width: 40%;
+      }
+    }
+  }
+
+  @media only screen and (max-width : 425px) {
+
+    .section-heading {
+      font-size: 2.2rem;
+    }
+
+    .section-content {
+      padding-bottom: 100px;
+
+      .workshop-container {
+
+        .info {
+
+          h2 {
+            font-size: 1.35rem;
+          }
+
+          p {
+            width: 85%;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .divider-container {
+        margin: 40px 0 80px;
+
+        .divider {
+          width: 40%;
+        }
+      }
+    }
+
+    .illustration-container {
+
+      .illustration {
+        width: 50%;
+      }
+    }
+  }
 }
