@@ -78,7 +78,7 @@ const Footer = () => {
         Powered by <a href='http://bvcoe.acm.org/'>ACM BVP</a>. All rights
         reserved.
       </p>
-      <p className='sub-heading'>
+      <p className='sub-heading code-of-conduct'>
         <Link to='/code-of-conduct'>Code of Conduct</Link>
       </p>
     </section>

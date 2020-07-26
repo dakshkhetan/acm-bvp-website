@@ -36,4 +36,30 @@
       margin: 0 15px;
     }
   }
+
+  @media only screen and (max-width : 425px) {
+    padding: 20px 10px;
+
+    .heading {
+      font-size: 1rem;
+    }
+
+    .sub-heading {
+      font-size: 1rem;
+      margin-top: -10px;
+
+      &.code-of-conduct {
+        font-size: 1.1rem;
+      }
+    }
+
+    .social-icons {
+      font-size: 2rem;
+      margin: 20px 0 30px 0;
+
+      .social-link {
+        margin: 0 10px;
+      }
+    }
+  }
 }
