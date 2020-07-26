@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../../assets/acm-logo/ACM-logo.png';
+
 import './Hero.styles.scss';
 
 const Hero = () => {

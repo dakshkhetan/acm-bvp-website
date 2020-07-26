@@ -69,4 +69,45 @@
       }
     }
   }
+
+  @media only screen and (max-width : 768px) {
+    height: auto !important;
+
+    .section-content {
+      padding-bottom: 10px;
+
+      .info {
+        width: 70%;
+        margin-top: 0;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .text {
+          font-size: 1.1rem !important;
+        }
+
+        .text-2 {
+          margin-top: -15px;
+        }
+
+        .mail-btn {
+          margin-top: 55px;
+
+          a {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .image-container {
+        height: 280px;
+
+        .illustration {
+          width: 550px;
+        }
+      }
+    }
+  }
 }

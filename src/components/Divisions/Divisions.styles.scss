@@ -18,7 +18,8 @@
       margin-top: 60px;
     }
 
-    .info-acmw, .info-acmp {
+    .info-acmw,
+    .info-acmp {
       width: 600px;
     }
 
@@ -42,6 +43,38 @@
       p {
         width: 80%;
         line-height: 1.6;
+      }
+    }
+  }
+
+  @media only screen and (max-width : 768px) {
+    height: auto !important;
+
+    .section-content {
+      padding-bottom: 50px;
+
+      .info-acmw,
+      .info-acmp {
+        width: 50%;
+      }
+
+      .image-container {
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 300px;
+        }
+      }
+
+      .text-container {
+        height: 220px;
+
+        p {
+          font-size: 1.2rem;
+        }
       }
     }
   }

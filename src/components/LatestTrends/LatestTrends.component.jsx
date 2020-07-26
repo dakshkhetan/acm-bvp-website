@@ -47,10 +47,10 @@ const LatestTrends = () => {
             </div>
           </Fade>
         </div>
-        <div className='illustration-container'>
-          <div className='illustration'>
-            <Illustration />
-          </div>
+      </div>
+      <div className='illustration-container'>
+        <div className='illustration'>
+          <Illustration />
         </div>
       </div>
     </section>
