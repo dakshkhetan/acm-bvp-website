@@ -48,6 +48,10 @@
   @media only screen and (max-width : 425px) {
     height: 95vh !important;
 
+    canvas {
+      height: 95vh !important;
+    }
+
     .logo-container {
       width: 90%;
     }
