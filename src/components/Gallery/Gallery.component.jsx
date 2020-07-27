@@ -26,7 +26,7 @@ const Gallery = () => {
         <div className='section-content'>
           <div className='workshop-container workshop-1'>
             <Fade delay={100}>
-              <Carousel />
+              <Carousel title='ar' />
             </Fade>
 
             <div className='info'>
@@ -45,7 +45,7 @@ const Gallery = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel />
+              <Carousel title='android' />
             </Fade>
 
             <div className='info'>
@@ -64,7 +64,7 @@ const Gallery = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel />
+              <Carousel title='hs' />
             </Fade>
 
             <div className='info'>
@@ -83,7 +83,7 @@ const Gallery = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel />
+              <Carousel title='webDev' />
             </Fade>
 
             <div className='info'>
@@ -102,7 +102,7 @@ const Gallery = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel />
+              <Carousel title='hoc' />
             </Fade>
 
             <div className='info'>
