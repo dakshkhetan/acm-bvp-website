@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { animateScroll as scroll } from 'react-scroll';
 
 import { ReactComponent as Image } from '../../../assets/illustrations/road-ahead.svg';
 
 import './RoadAhead.styles.scss';
 
 const RoadAhead = () => {
-  useEffect(() => {
-    scroll.scrollToTop();
-  }, []);
-
   return (
     <React.Fragment>
       <section id='road-ahead' className='section section-acmw-roadAhead'>

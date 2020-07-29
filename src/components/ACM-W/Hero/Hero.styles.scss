@@ -38,12 +38,17 @@
     justify-content: center;
 
     canvas {
-      height: 100% !important;
+      height: 90vh !important;
     }
 
     .logo-container {
-      width: 60%;
-      margin-top: -20px;
+      width: 70%;
+      margin: -40px 0 20px;
+    }
+
+    .hero-heading {
+      width: 70%;
+      font-size: 1.75rem !important;
     }
   }
 

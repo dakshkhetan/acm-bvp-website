@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { animateScroll as scroll } from 'react-scroll';
 
 import { accomplishments } from '../../../accomplishments.data';
 
@@ -13,10 +12,6 @@ import { ReactComponent as ArrowRight } from '../../../assets/illustrations/arro
 import './Accomplishments.styles.scss';
 
 const Accomplishments = () => {
-  useEffect(() => {
-    scroll.scrollToTop();
-  }, []);
-
   return (
     <React.Fragment>
       <section

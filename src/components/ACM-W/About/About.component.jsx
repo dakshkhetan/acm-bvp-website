@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { animateScroll as scroll } from 'react-scroll';
 
 import { ReactComponent as Image } from '../../../assets/illustrations/introduction.svg';
 
 import './About.styles.scss';
 
 const About = () => {
-  useEffect(() => {
-    scroll.scrollToTop();
-  }, []);
-
   return (
     <React.Fragment>
       <section id='about' className='section section-acmw-about'>
