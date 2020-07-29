@@ -25,6 +25,9 @@ class SideDrawer extends React.Component {
           <span className='option' onClick={() => onClickHandler('dsp')}>
             DSP
           </span>
+          <span className='option' onClick={() => onClickHandler('faq')}>
+            FAQ
+          </span>
           <span className='option' onClick={() => onClickHandler('contact')}>
             Contact
           </span>

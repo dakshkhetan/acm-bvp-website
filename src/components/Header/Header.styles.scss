@@ -38,7 +38,12 @@
 
     .option {
       padding: 10px 15px;
+      text-transform: capitalize;
       cursor: pointer;
+
+      &.faq {
+        text-transform: uppercase;
+      }
 
       &:hover {
         cursor: pointer;

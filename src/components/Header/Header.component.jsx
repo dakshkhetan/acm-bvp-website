@@ -36,23 +36,26 @@ class Header extends React.Component {
     this.closeSideDrawer();
   };
 
-  contactOption = () => {
+  headerOption = (option) => {
     const { location, history } = this.props;
     return location.pathname === '/' ? (
       <ScrollLink
         activeClass='active'
-        to='contact'
+        to={option}
         spy={true}
         smooth={true}
         offset={-70}
         duration={500}
-        className='option hover'
+        className={`option hover ${option}`}
       >
-        Contact
+        {option}
       </ScrollLink>
     ) : (
-      <span className='option hover' onClick={() => history.push('/contact')}>
-        Contact
+      <span
+        className={`option hover ${option}`}
+        onClick={() => history.push(`/${option}`)}
+      >
+        {option}
       </span>
     );
   };
@@ -68,7 +71,8 @@ class Header extends React.Component {
       <Link to='/dsp' className={`${className} hover`}>
         DSP
       </Link>
-      {this.contactOption()}
+      {this.headerOption('faq')}
+      {this.headerOption('contact')}
     </React.Fragment>
   );
 
