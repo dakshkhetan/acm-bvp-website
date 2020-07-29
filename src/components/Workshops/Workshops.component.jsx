@@ -23,7 +23,7 @@ const Workshops = () => {
           </Fade>
           <Fade bottom delay={250}>
             <div className='link-btn'>
-              <Link to='/gallery'>Check More Such Events</Link>
+              <Link to='/events'>Check More Such Events</Link>
             </div>
           </Fade>
         </div>

@@ -9,7 +9,7 @@ import {
 
 import App from './App';
 import Header from './components/Header/Header.component';
-import Gallery from './components/Gallery/Gallery.component';
+import Events from './components/Events/Events.component';
 import DSP from './components/DSP/Dsp.component';
 import FAQs from './components/FAQs/FAQs.component';
 import Contact from './components/Contact/Contact.component';
@@ -22,7 +22,7 @@ const Root = () => (
     <Header />
     <Switch>
       <Route exact path='/' component={App} />
-      <Route path='/gallery' component={Gallery} />
+      <Route path='/events' component={Events} />
       <Route path='/dsp' component={DSP} />
       <Route path='/faq' component={FAQs} />
       <Route path='/contact' component={Contact} />

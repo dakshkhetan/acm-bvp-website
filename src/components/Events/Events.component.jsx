@@ -9,18 +9,18 @@ import Footer from '../Footer/Footer.component';
 import { ReactComponent as Divider } from '../../assets/illustrations/section-divider.svg';
 import { ReactComponent as Illustration } from '../../assets/illustrations/event.svg';
 
-import './Gallery.styles.scss';
+import './Events.styles.scss';
 
-const Gallery = () => {
+const Events = () => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
 
   return (
     <React.Fragment>
-      <section id='gallery' className='section section-gallery'>
+      <section id='events' className='section section-events'>
         <Fade bottom>
-          <h1 className='section-heading'>Gallery</h1>
+          <h1 className='section-heading'>Events</h1>
         </Fade>
 
         <div className='section-content'>
@@ -131,4 +131,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Events;
