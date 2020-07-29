@@ -61,28 +61,30 @@
 
   @media only screen and (max-width : 425px) {
 
+    padding: 15px 5% 40px !important;
+
     .section-content {
-      padding-bottom: 20px;
 
-      .info-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      .info {
+        width: 93%;
+        text-align: center;
 
-        .info {
-          width: 60%;
-          text-align: center;
+        h2 {
+          font-size: 2.3rem;
+        }
 
-          h2 {
-            font-size: 1.4rem;
-          }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.7;
+          text-align: justify;
         }
       }
 
       .illustration-container {
 
         .illustration {
-          width: 100%;
+          width: 220px;
+          margin-top: -30px;
         }
       }
     }
