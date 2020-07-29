@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import { withRouter } from 'react-router-dom';
 
 import image1 from '../../assets/acm-logo/ACM-W-logo.png';
 import image2 from '../../assets/acm-logo/ACM-Parivartan-logo.png';
@@ -7,18 +8,23 @@ import { ReactComponent as Divider } from './../../assets/illustrations/divider.
 
 import './Divisions.styles.scss';
 
-const Divisions = () => {
+const Divisions = ({ history }) => {
   return (
     <section id='divisions' className='section section-divisions'>
       <Fade bottom>
         <h1 className='section-heading'>Divisions</h1>
       </Fade>
-      
+
       <div className='section-content'>
         <div className='info-acmw'>
           <Fade bottom delay={150}>
             <div className='image-container'>
-              <img src={image1} className='image-acmw' alt='acm-w' />
+              <img
+                src={image1}
+                className='image-acmw'
+                alt='acm-w'
+                onClick={() => history.push('/acm-w')}
+              />
             </div>
           </Fade>
           <Fade bottom delay={250}>
@@ -54,4 +60,4 @@ const Divisions = () => {
   );
 };
 
-export default Divisions;
+export default withRouter(Divisions);

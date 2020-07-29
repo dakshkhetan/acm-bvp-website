@@ -1,0 +1,89 @@
+.section-acmw-about {
+  height: auto !important;
+  padding: 30px 5% 40px !important;
+
+  .section-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: space-around;
+
+    .info {
+      width: 440px;
+      margin: 60px 0;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.3rem;
+        line-height: 1.75;
+      }
+    }
+
+    .illustration-container {
+      display: flex;
+      align-items: center;
+
+      .illustration {
+        width: 350px;
+      }
+    }
+  }
+
+  @media only screen and (max-width : 768px) {
+    height: auto !important;
+
+    .section-content {
+      padding-bottom: 10px;
+
+      .info {
+        width: 70%;
+        margin-top: 0;
+      }
+
+      .illustration-container {
+
+        .illustration {
+          width: 550px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width : 425px) {
+
+    .section-content {
+      padding-bottom: 20px;
+
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info {
+          width: 60%;
+          text-align: center;
+
+          h2 {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      .illustration-container {
+
+        .illustration {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

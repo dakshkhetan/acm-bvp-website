@@ -8,6 +8,8 @@ import {
 } from 'react-router-dom';
 
 import App from './App';
+import ACM_W from './components/ACM-W/App/App.component';
+
 import Header from './components/Header/Header.component';
 import Events from './components/Events/Events.component';
 import DSP from './components/DSP/Dsp.component';
@@ -22,6 +24,7 @@ const Root = () => (
     <Header />
     <Switch>
       <Route exact path='/' component={App} />
+      <Route path='/acm-w' component={ACM_W} />
       <Route path='/events' component={Events} />
       <Route path='/dsp' component={DSP} />
       <Route path='/faq' component={FAQs} />
