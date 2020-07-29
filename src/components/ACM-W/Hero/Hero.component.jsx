@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <section id='home' className='section section-acmw-hero'>
-      <Fade>
+      <Fade delay={200}>
         <div className='logo-container'>
           <img src={logo} alt='ACM-W logo' />
         </div>

@@ -43,14 +43,12 @@ const Accomplishments = () => {
           </div>
 
           <div className='accomplishments'>
-            <Fade bottom delay={250}>
-              {accomplishments.map((accomplishment) => (
-                <Accomplishment
-                  key={accomplishment.key}
-                  accomplishment={accomplishment}
-                />
-              ))}
-            </Fade>
+            {accomplishments.map((accomplishment) => (
+              <Accomplishment
+                key={accomplishment.key}
+                accomplishment={accomplishment}
+              />
+            ))}
 
             <div className='honorary-mentions'>
               <Fade right delay={250}>

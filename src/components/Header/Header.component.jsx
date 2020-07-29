@@ -24,6 +24,15 @@ class Header extends React.Component {
     location.pathname === '/' ? scroll.scrollToTop() : history.push('/');
   };
 
+  scrollToTopACMW = () => {
+    const { location, history } = this.props;
+    const { sideDrawerOpen } = this.state;
+    sideDrawerOpen && this.closeSideDrawer();
+    location.pathname === '/acm-w'
+      ? scroll.scrollToTop()
+      : history.push('/acm-w');
+  };
+
   openSideDrawer = () => {
     this.setState((prevState) => ({
       sideDrawerOpen: !prevState.sideDrawerOpen
@@ -68,9 +77,12 @@ class Header extends React.Component {
       <Link to='/events' className={`${className} hover`}>
         Events
       </Link>
-      <Link to='/acm-w' className={`${className} hover`}>
+      <span
+        className={`${className} hover`}
+        onClick={() => this.scrollToTopACMW()}
+      >
         ACM-W
-      </Link>
+      </span>
       <Link to='/dsp' className={`${className} hover`}>
         DSP
       </Link>

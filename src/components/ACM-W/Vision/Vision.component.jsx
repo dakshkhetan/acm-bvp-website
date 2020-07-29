@@ -26,7 +26,7 @@ const Vision = () => {
             </Fade>
           </div>
 
-          <Fade delay={300}>
+          <Fade left delay={400}>
             <div className='illustration-container'>
               <div className='illustration'>
                 <Image />
