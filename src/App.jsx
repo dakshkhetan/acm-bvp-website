@@ -5,6 +5,7 @@ import Workshops from './components/Workshops/Workshops.component';
 import Divisions from './components/Divisions/Divisions.component';
 import LatestTrends from './components/LatestTrends/LatestTrends.component';
 import Team from './components/Team/Team.component';
+import FAQs from './components/FAQs/FAQs.component';
 import Contact from './components/Contact/Contact.component';
 import Footer from './components/Footer/Footer.component';
 
@@ -22,6 +23,7 @@ const App = () => {
       <Divisions />
       <LatestTrends />
       <Team />
+      <FAQs />
       <Contact />
       <Footer />
     </div>
