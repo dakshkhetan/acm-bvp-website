@@ -53,7 +53,7 @@ const Person = ({ member }) => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FontAwesomeIcon icon={faGithub} className='icon github mr-10' />
+            <FontAwesomeIcon icon={faGithub} className='icon github m-8' />
           </a>
         )}
         {twitterURL && (
