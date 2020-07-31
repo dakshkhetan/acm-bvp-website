@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import { accomplishments } from '../../../accomplishments.data';
+import { accomplishments } from '../../../data/accomplishments.data';
 
 import Accomplishment from './Accomplishment.component';
 

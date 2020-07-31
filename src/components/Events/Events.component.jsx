@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { animateScroll as scroll } from 'react-scroll';
 
-import { workshops } from '../../workshops.data';
+import { workshops } from '../../data/workshops.data';
 import Carousel from '../Carousel/Carousel.component';
 import Footer from '../Footer/Footer.component';
 

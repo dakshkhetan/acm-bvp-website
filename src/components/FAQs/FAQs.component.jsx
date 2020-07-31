@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 
-import { FAQData } from '../../faq.data';
+import { FAQData } from '../../data/faq.data';
 
 import FAQ from './FAQ.component';
 import Footer from '../Footer/Footer.component';

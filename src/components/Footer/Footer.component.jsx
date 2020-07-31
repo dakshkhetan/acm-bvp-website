@@ -22,10 +22,7 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className='icon instagram'
-          />
+          <FontAwesomeIcon icon={faInstagram} className='icon instagram' />
         </a>
         <a
           href='https://twitter.com/acmbvp'
@@ -33,10 +30,7 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className='icon twitter'
-          />
+          <FontAwesomeIcon icon={faTwitter} className='icon twitter' />
         </a>
         <a
           href='https://in.linkedin.com/organization-guest/company/acmbvp'
@@ -44,10 +38,7 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FontAwesomeIcon
-            icon={faLinkedinIn}
-            className='icon linkedin'
-          />
+          <FontAwesomeIcon icon={faLinkedinIn} className='icon linkedin' />
         </a>
         <a
           href='https://github.com/acmbvp'
@@ -55,10 +46,7 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className='icon github'
-          />
+          <FontAwesomeIcon icon={faGithub} className='icon github' />
         </a>
         <a
           href='https://www.facebook.com/acmbvp'
@@ -66,10 +54,7 @@ const Footer = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className='icon facebook'
-          />
+          <FontAwesomeIcon icon={faFacebook} className='icon facebook' />
         </a>
       </div>
 
@@ -80,6 +65,17 @@ const Footer = () => {
       </p>
       <p className='sub-heading code-of-conduct'>
         <Link to='/code-of-conduct'>Code of Conduct</Link>
+      </p>
+      <p className='sub-heading credit'>
+        Designed & developed by{' '}
+        <a
+          href='https://dakshkhetan.now.sh'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='credit-link'
+        >
+          Daksh Khetan
+        </a>
       </p>
     </section>
   );

@@ -24,6 +24,22 @@
   .sub-heading {
     font-size: 1.2rem;
     margin-top: -10px;
+
+    &.code-of-conduct {
+      font-size: 1.3rem;
+    }
+
+    &.credit {
+      font-size: 0.9rem;
+      color: #848484;
+      text-transform: capitalize;
+      margin: 10px 0 -5px;
+
+      .credit-link {
+        color: #a3a3a3;
+        cursor: pointer;
+      }
+    }
   }
 
   .social-icons {
@@ -50,6 +66,10 @@
 
       &.code-of-conduct {
         font-size: 1.1rem;
+      }
+
+      &.credit {
+        font-size: 0.8rem;
       }
     }
 
