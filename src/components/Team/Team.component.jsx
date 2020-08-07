@@ -16,7 +16,17 @@ const Team = () => {
         <div className='section-content'>
           <div className='members'>
             <Fade bottom delay={150}>
-              {TeamData.map((member) => (
+              {TeamData.members.map((member) => (
+                <Person key={member.key} member={member} />
+              ))}
+            </Fade>
+          </div>
+          <Fade bottom delay={200}>
+            <h2 className='section-heading'>Mentors</h2>
+          </Fade>
+          <div className='mentors'>
+            <Fade bottom delay={150}>
+              {TeamData.mentors.map((member) => (
                 <Person key={member.key} member={member} />
               ))}
             </Fade>

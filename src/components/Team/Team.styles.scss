@@ -4,9 +4,21 @@
   .section-content {
     text-align: center;
 
+    h2 {
+      font-size: 2.4rem !important;
+    }
+
     .members {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .mentors {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
     }
 
@@ -29,7 +41,8 @@
     .section-content {
       padding-bottom: 50px;
 
-      .members {
+      .members,
+      .mentors {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 0;
       }
@@ -51,6 +64,12 @@
     .section-content {
 
       .members {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
+
+      .mentors {
+        width: auto;
         grid-template-columns: 1fr;
         grid-gap: 0;
       }
