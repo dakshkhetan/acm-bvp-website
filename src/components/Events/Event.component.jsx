@@ -6,13 +6,13 @@ import Carousel from '../Carousel/Carousel.component';
 import { ReactComponent as Divider } from '../../assets/illustrations/section-divider.svg';
 
 const Event = ({ workshop }) => {
-  const { title, details, code } = workshop;
+  const { title, details, images } = workshop;
 
   return (
     <React.Fragment>
       <div className='workshop-container'>
         <Fade bottom delay={100}>
-          <Carousel title={code} />
+          <Carousel images={images} />
         </Fade>
 
         <div className='info'>
