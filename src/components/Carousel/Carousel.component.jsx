@@ -38,6 +38,12 @@ import hoc5 from '../../assets/gallery/hoc/hoc5.jpg';
 import hoc6 from '../../assets/gallery/hoc/hoc6.jpg';
 import hoc7 from '../../assets/gallery/hoc/hoc7.jpg';
 
+import ml1 from '../../assets/gallery/ml/ml1.jpg';
+import ml2 from '../../assets/gallery/ml/ml2.jpg';
+import ml3 from '../../assets/gallery/ml/ml3.jpg';
+import ml4 from '../../assets/gallery/ml/ml4.jpg';
+import ml5 from '../../assets/gallery/ml/ml5.jpg';
+
 import './Carousel.styles.scss';
 
 const Carousel = ({ title }) => {
@@ -82,6 +88,38 @@ const Carousel = ({ title }) => {
 
   const content = () => {
     switch (title) {
+      case 'ml':
+        return (
+          <div className='carousel slider-container'>
+            <Slider {...settings}>
+              <div className='slide'>
+                <div className='image-container'>
+                  <img src={ml1} alt='workshop' />
+                </div>
+              </div>
+              <div className='slide'>
+                <div className='image-container'>
+                  <img src={ml2} alt='workshop' />
+                </div>
+              </div>
+              <div className='slide'>
+                <div className='image-container'>
+                  <img src={ml3} alt='workshop' />
+                </div>
+              </div>
+              <div className='slide'>
+                <div className='image-container'>
+                  <img src={ml4} alt='workshop' />
+                </div>
+              </div>
+              <div className='slide'>
+                <div className='image-container'>
+                  <img src={ml5} alt='workshop' />
+                </div>
+              </div>
+            </Slider>
+          </div>
+        );
       case 'ar':
         return (
           <div className='carousel slider-container'>

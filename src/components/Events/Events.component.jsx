@@ -25,8 +25,8 @@ const Events = () => {
 
         <div className='section-content'>
           <div className='workshop-container workshop-1'>
-            <Fade delay={100}>
-              <Carousel title='ar' />
+            <Fade bottom delay={100}>
+              <Carousel title='ml' />
             </Fade>
 
             <div className='info'>
@@ -44,8 +44,8 @@ const Events = () => {
           </div>
 
           <div className='workshop-container workshop-1'>
-            <Fade bottom delay={100}>
-              <Carousel title='android' />
+            <Fade delay={100}>
+              <Carousel title='ar' />
             </Fade>
 
             <div className='info'>
@@ -64,7 +64,7 @@ const Events = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel title='hs' />
+              <Carousel title='android' />
             </Fade>
 
             <div className='info'>
@@ -83,7 +83,7 @@ const Events = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel title='webDev' />
+              <Carousel title='hs' />
             </Fade>
 
             <div className='info'>
@@ -102,7 +102,7 @@ const Events = () => {
 
           <div className='workshop-container workshop-1'>
             <Fade bottom delay={100}>
-              <Carousel title='hoc' />
+              <Carousel title='webDev' />
             </Fade>
 
             <div className='info'>
@@ -111,6 +111,25 @@ const Events = () => {
               </Fade>
               <Fade bottom delay={200}>
                 <p>{workshops[4].details}</p>
+              </Fade>
+            </div>
+          </div>
+
+          <div className='divider-container'>
+            <Divider className='divider' />
+          </div>
+
+          <div className='workshop-container workshop-1'>
+            <Fade bottom delay={100}>
+              <Carousel title='hoc' />
+            </Fade>
+
+            <div className='info'>
+              <Fade bottom delay={300}>
+                <h2>{workshops[5].title}</h2>
+              </Fade>
+              <Fade bottom delay={200}>
+                <p>{workshops[5].details}</p>
               </Fade>
             </div>
           </div>
