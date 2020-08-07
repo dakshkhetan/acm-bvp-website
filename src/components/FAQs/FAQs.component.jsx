@@ -1,25 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { withRouter } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 
 import { FAQData } from '../../data/faq.data';
 
 import FAQ from './FAQ.component';
-import Footer from '../Footer/Footer.component';
 
 import { ReactComponent as Illustration } from '../../assets/illustrations/faq.svg';
 
 import './FAQs.styles.scss';
 
-const FAQs = ({ location }) => {
+const FAQs = () => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
-
-  const addFooterCheck = () => {
-    return location.pathname === '/faq' && <Footer />;
-  };
 
   const [faqs, setFaqs] = useState(FAQData);
 
@@ -55,9 +49,8 @@ const FAQs = ({ location }) => {
           </div>
         </Fade>
       </section>
-      {addFooterCheck()}
     </React.Fragment>
   );
 };
 
-export default withRouter(FAQs);
+export default FAQs;

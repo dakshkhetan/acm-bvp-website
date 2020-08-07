@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { animateScroll as scroll } from 'react-scroll';
 
-import Footer from '../Footer/Footer.component';
-
 import './CodeOfConduct.styles.scss';
 
 const CodeOfConduct = () => {
@@ -202,7 +200,6 @@ const CodeOfConduct = () => {
         </Fade>
         {content()}
       </section>
-      <Footer />
     </React.Fragment>
   );
 };

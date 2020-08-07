@@ -1,22 +1,15 @@
 import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { withRouter } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
-
-import Footer from '../Footer/Footer.component';
 
 import { ReactComponent as Image } from '../../assets/illustrations/contact.svg';
 
 import './Contact.styles.scss';
 
-const Contact = ({ location }) => {
+const Contact = () => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
-
-  const addFooterCheck = () => {
-    return location.pathname === '/contact' && <Footer />;
-  };
 
   return (
     <React.Fragment>
@@ -58,10 +51,8 @@ const Contact = ({ location }) => {
           </Fade>
         </div>
       </section>
-
-      {addFooterCheck()}
     </React.Fragment>
   );
 };
 
-export default withRouter(Contact);
+export default Contact;

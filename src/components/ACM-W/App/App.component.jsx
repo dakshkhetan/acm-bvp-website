@@ -5,7 +5,6 @@ import About from '../About/About.component';
 import Vision from '../Vision/Vision.component';
 import Accomplishments from '../Accomplishments/Accomplishments.component';
 import RoadAhead from '../RoadAhead/RoadAhead.component';
-import Footer from '../../Footer/Footer.component';
 
 import './App.styles.scss';
 
@@ -21,7 +20,6 @@ const ACM_W = () => {
       <Vision />
       <Accomplishments />
       <RoadAhead />
-      <Footer />
     </div>
   );
 };

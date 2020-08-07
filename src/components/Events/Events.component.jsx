@@ -5,7 +5,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import { workshops } from '../../data/workshops.data';
 
 import Event from './Event.component';
-import Footer from '../Footer/Footer.component';
 
 import { ReactComponent as Illustration } from '../../assets/illustrations/event.svg';
 
@@ -35,7 +34,6 @@ const Events = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </React.Fragment>
   );
 };

@@ -7,7 +7,6 @@ import LatestTrends from './components/LatestTrends/LatestTrends.component';
 import Team from './components/Team/Team.component';
 import FAQs from './components/FAQs/FAQs.component';
 import Contact from './components/Contact/Contact.component';
-import Footer from './components/Footer/Footer.component';
 
 import './App.scss';
 
@@ -25,7 +24,6 @@ const App = () => {
       <Team />
       <FAQs />
       <Contact />
-      <Footer />
     </div>
   );
 };

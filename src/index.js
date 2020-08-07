@@ -16,6 +16,7 @@ import DSP from './components/DSP/Dsp.component';
 import FAQs from './components/FAQs/FAQs.component';
 import Contact from './components/Contact/Contact.component';
 import CodeOfConduct from './components/CodeOfConduct/CodeOfConduct.component';
+import Footer from './components/Footer/Footer.component';
 
 import './index.css';
 
@@ -32,6 +33,7 @@ const Root = () => (
       <Route path='/code-of-conduct' component={CodeOfConduct} />
       <Redirect to='/' />
     </Switch>
+    <Footer />
   </Router>
 );
 
