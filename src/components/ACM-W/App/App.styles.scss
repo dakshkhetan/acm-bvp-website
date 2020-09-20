@@ -31,4 +31,23 @@
       }
     }
   }
+
+  &.dark {
+
+    .section {
+      color: #eee;
+
+      &:nth-child(odd) {
+        background-color: #292929;
+      }
+
+      &:nth-child(even) {
+        background-color: #323232;
+      }
+
+      &:nth-child(1) {
+        background-color: unset;
+      }
+    }
+  }
 }

@@ -85,4 +85,19 @@
       }
     }
   }
+
+  &.dark {
+
+    .section-content {
+      .members {
+        .member {
+          .social-icons {
+            a {
+              color: #e3e3e3;
+            }
+          }
+        }
+      }
+    }
+  }
 }

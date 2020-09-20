@@ -138,4 +138,27 @@
       }
     }
   }
+
+  &.dark {
+    background-color: #292929;
+    color: #eee;
+
+    .section-content .info {
+
+      .mail-btn {
+
+        span {
+
+          a {
+            color: #eee !important;
+            border: 2px solid #eee;
+
+            &:hover {
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
 }

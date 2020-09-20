@@ -107,4 +107,26 @@
       }
     }
   }
+
+  &.dark {
+
+    .section-content>.info {
+
+      .link-btn {
+        border: 2px solid #eee;
+
+        a {
+          color: #eee;
+        }
+
+        &:hover {
+          background-color: #eee;
+
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
 }
