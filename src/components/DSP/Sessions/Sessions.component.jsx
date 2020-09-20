@@ -8,9 +8,12 @@ import { ReactComponent as Illustration } from '../../../assets/illustrations/se
 
 import './Sessions.styles.scss';
 
-const Sessions = () => {
+const Sessions = ({ darkMode }) => {
   return (
-    <section id='dsp-sessions' className='section-dsp-sessions'>
+    <section
+      id='dsp-sessions'
+      className={`section-dsp-sessions ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>Sessions</h1>
       </Fade>

@@ -10,14 +10,17 @@ import { ReactComponent as Illustration } from '../../assets/illustrations/event
 
 import './Events.styles.scss';
 
-const Events = () => {
+const Events = ({ darkMode }) => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
 
   return (
     <React.Fragment>
-      <section id='events' className='section section-events'>
+      <section
+        id='events'
+        className={`section section-events ${darkMode ? 'dark' : ''}`}
+      >
         <Fade bottom>
           <h1 className='section-heading'>Events</h1>
         </Fade>

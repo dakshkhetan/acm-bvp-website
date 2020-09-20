@@ -8,9 +8,12 @@ import { ReactComponent as Illustration } from '../../assets/illustrations/team.
 
 import './Team.styles.scss';
 
-const Team = () => {
+const Team = ({ darkMode }) => {
   return (
-    <section id='team' className='section section-team'>
+    <section
+      id='team'
+      className={`section section-team ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>Meet The Team</h1>
         <div className='section-content'>

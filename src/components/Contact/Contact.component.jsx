@@ -6,14 +6,17 @@ import { ReactComponent as Image } from '../../assets/illustrations/contact.svg'
 
 import './Contact.styles.scss';
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
 
   return (
     <React.Fragment>
-      <section id='contact' className='section section-contact'>
+      <section
+        id='contact'
+        className={`section section-contact ${darkMode ? 'dark' : ''}`}
+      >
         <Fade bottom>
           <h1 className='section-heading'>Reach Us</h1>
         </Fade>
@@ -36,7 +39,9 @@ const Contact = () => {
 
               <Fade bottom delay={500}>
                 <div className='mail-btn'>
-                  <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
+                  <span>
+                    <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
+                  </span>
                 </div>
               </Fade>
             </div>

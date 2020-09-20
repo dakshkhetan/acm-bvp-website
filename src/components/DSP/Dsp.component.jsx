@@ -7,17 +7,20 @@ import Sessions from './Sessions/Sessions.component';
 
 import './Dsp.styles.scss';
 
-const DSP = () => {
+const DSP = ({ darkMode }) => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
 
   return (
     <React.Fragment>
-      <section id='dsp' className='section section-dsp'>
-        <Hero />
-        <Speakers />
-        <Sessions />
+      <section
+        id='dsp'
+        className={`section section-dsp ${darkMode ? 'dark' : ''}`}
+      >
+        <Hero darkMode={darkMode} />
+        <Speakers darkMode={darkMode} />
+        <Sessions darkMode={darkMode} />
       </section>
     </React.Fragment>
   );

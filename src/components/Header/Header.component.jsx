@@ -1,14 +1,21 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { toggleDarkMode } from '../../redux/dark-mode/dark-mode.action';
+
+import Toggle from '../Toggle/Toggle';
 import SideDrawer from '../SideDrawer/SideDrawer.component';
 import Backdrop from '../Backdrop/Backdrop.component';
 
 import logo from '../../assets/acm-logo/ACM-BVP-logo.png';
+import sun from '../../assets/illustrations/sun.png';
+import moon from '../../assets/illustrations/moon.png';
 
 import './Header.styles.scss';
 
@@ -44,6 +51,37 @@ class Header extends React.Component {
   backdropClickHandler = () => {
     this.closeSideDrawer();
   };
+
+  darkModeToggle = () => (
+    <span className='dark-mode-toggle'>
+      <Toggle
+        icons={{
+          checked: (
+            <img
+              src={moon}
+              alt='moon'
+              width='16'
+              height='16'
+              role='presentation'
+              style={{ pointerEvents: 'none' }}
+            />
+          ),
+          unchecked: (
+            <img
+              src={sun}
+              alt='sun'
+              width='16'
+              height='16'
+              role='presentation'
+              style={{ pointerEvents: 'none' }}
+            />
+          )
+        }}
+        checked={this.props.darkMode}
+        onChange={this.props.toggleDarkMode}
+      />
+    </span>
+  );
 
   headerOption = (option) => {
     const { location, history } = this.props;
@@ -88,14 +126,16 @@ class Header extends React.Component {
       </Link>
       {this.headerOption('faq')}
       {this.headerOption('contact')}
+      {this.darkModeToggle()}
     </React.Fragment>
   );
 
   render() {
     const { sideDrawerOpen } = this.state;
+    const { darkMode } = this.props;
 
     return (
-      <nav className='header'>
+      <nav className={`header ${darkMode ? 'dark' : ''}`}>
         <div className='logo-container'>
           <img
             src={logo}
@@ -108,6 +148,7 @@ class Header extends React.Component {
         <div className='options'>{this.headerOptions('option')}</div>
 
         <div className='sidedrawer-btn'>
+          {this.darkModeToggle()}
           <span className='toggle' onClick={this.openSideDrawer}>
             <FontAwesomeIcon icon={faBars} />
           </span>
@@ -117,6 +158,7 @@ class Header extends React.Component {
           show={sideDrawerOpen}
           closeSideDrawer={this.closeSideDrawer}
           scrollToTop={this.scrollToTop}
+          darkMode={darkMode}
         />
         {sideDrawerOpen && <Backdrop click={this.backdropClickHandler} />}
       </nav>
@@ -124,4 +166,11 @@ class Header extends React.Component {
   }
 }
 
-export default withRouter(Header);
+const mapStateToProps = (state) => ({
+  darkMode: state.theme.darkMode
+});
+
+export default compose(
+  withRouter,
+  connect(mapStateToProps, { toggleDarkMode })
+)(Header);

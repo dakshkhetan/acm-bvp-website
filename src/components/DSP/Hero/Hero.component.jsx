@@ -5,9 +5,12 @@ import { ReactComponent as Image } from '../../../assets/acm-logo/ACM-DSP.svg';
 
 import './Hero.styles.scss';
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   return (
-    <section id='dsp-hero' className='section-dsp-hero'>
+    <section
+      id='dsp-hero'
+      className={`section-dsp-hero ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>ACM Distinguished Speakers Program</h1>
       </Fade>

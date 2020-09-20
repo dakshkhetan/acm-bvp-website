@@ -49,8 +49,8 @@ const Carousel = ({ images }) => {
   return (
     <div className='carousel slider-container'>
       <Slider {...settings}>
-        {images.map((image) => (
-          <div className='slide'>
+        {images.map((image, i) => (
+          <div key={i} className='slide'>
             <div className='image-container'>
               <img src={image} alt='workshop' />
             </div>

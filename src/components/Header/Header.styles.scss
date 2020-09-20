@@ -85,6 +85,11 @@
         right: 40%;
       }
     }
+
+    .dark-mode-toggle {
+      margin-top: 6px;
+      padding-top: 1px;
+    }
   }
 
   @media only screen and (max-width : 425px) {
@@ -104,6 +109,12 @@
 
       .toggle {
         font-size: 1.5rem;
+      }
+
+      .dark-mode-toggle {
+        margin-top: 8px;
+        padding-top: 1px;
+        margin-right: 25px;
       }
     }
   }

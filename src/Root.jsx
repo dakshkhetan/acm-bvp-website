@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import App from './App';
 import ACM_W from './components/ACM-W/App/App.component';
@@ -12,23 +13,28 @@ import Contact from './components/Contact/Contact.component';
 import CodeOfConduct from './components/CodeOfConduct/CodeOfConduct.component';
 import Footer from './components/Footer/Footer.component';
 
-import './index.css';
-
-const Root = () => (
+const Root = ({ darkMode }) => (
   <React.Fragment>
     <Header />
     <Switch>
-      <Route exact path='/' component={App} />
-      <Route path='/acm-w' component={ACM_W} />
-      <Route path='/events' component={Events} />
-      <Route path='/dsp' component={DSP} />
-      <Route path='/faq' component={FAQs} />
-      <Route path='/contact' component={Contact} />
-      <Route path='/code-of-conduct' component={CodeOfConduct} />
+      <Route exact path='/' render={() => <App darkMode={darkMode} />} />
+      <Route path='/acm-w' render={() => <ACM_W darkMode={darkMode} />} />
+      <Route path='/events' render={() => <Events darkMode={darkMode} />} />
+      <Route path='/dsp' render={() => <DSP darkMode={darkMode} />} />
+      <Route path='/faq' render={() => <FAQs darkMode={darkMode} />} />
+      <Route path='/contact' render={() => <Contact darkMode={darkMode} />} />
+      <Route
+        path='/code-of-conduct'
+        render={() => <CodeOfConduct darkMode={darkMode} />}
+      />
       <Redirect to='/' />
     </Switch>
     <Footer />
   </React.Fragment>
 );
 
-export default Root;
+const mapStateToProps = (state) => ({
+  darkMode: state.theme.darkMode
+});
+
+export default connect(mapStateToProps)(Root);

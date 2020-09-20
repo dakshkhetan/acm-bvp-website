@@ -7,9 +7,12 @@ import { ReactComponent as Illustration } from '../../../assets/illustrations/sp
 
 import './Speakers.styles.scss';
 
-const Speakers = () => {
+const Speakers = ({ darkMode }) => {
   return (
-    <section id='dsp-speakers' className='section-dsp-speakers'>
+    <section
+      id='dsp-speakers'
+      className={`section-dsp-speakers ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>Speakers</h1>
       </Fade>

@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import DisplayImagePlaceholder from '../../assets/display-pics/displayPicTemplate.png';
+
 import './Person.styles.scss';
 
 const Person = ({ member }) => {
