@@ -72,7 +72,7 @@ const Footer = () => {
           href='https://dakshkhetan.now.sh'
           target='_blank'
           rel='noopener noreferrer'
-          className='credit-link'
+          className='credit-link underline'
         >
           Daksh Khetan
         </a>

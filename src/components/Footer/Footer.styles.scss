@@ -53,6 +53,20 @@
     }
   }
 
+  .underline {
+    font-weight: 400;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 95%;
+      left: 0;
+      border-bottom: 2.5px solid #dd6b71;
+    }
+  }
+
   @media only screen and (max-width : 425px) {
     padding: 20px 10px;
 
