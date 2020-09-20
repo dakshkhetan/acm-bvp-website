@@ -8,7 +8,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideDrawer from '../SideDrawer/SideDrawer.component';
 import Backdrop from '../Backdrop/Backdrop.component';
 
-import logo from '../../assets/acm-logo/ACM-BVP-logo.jpg';
+import logo from '../../assets/acm-logo/ACM-BVP-logo.png';
 
 import './Header.styles.scss';
 
