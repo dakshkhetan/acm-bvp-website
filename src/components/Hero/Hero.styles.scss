@@ -65,4 +65,12 @@
       font-size: 1.8rem;
     }
   }
+
+  &.dark {
+    background-color: #292929 !important;
+
+    .hero-icon {
+      color: #eee;
+    }
+  }
 }

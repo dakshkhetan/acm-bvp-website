@@ -1,45 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import App from './App';
-import ACM_W from './components/ACM-W/App/App.component';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from './redux/store';
 
-import Header from './components/Header/Header.component';
-import Events from './components/Events/Events.component';
-import DSP from './components/DSP/Dsp.component';
-import FAQs from './components/FAQs/FAQs.component';
-import Contact from './components/Contact/Contact.component';
-import CodeOfConduct from './components/CodeOfConduct/CodeOfConduct.component';
-import Footer from './components/Footer/Footer.component';
+import Root from './Root';
 
 import './index.css';
 
-const Root = () => (
-  <Router>
-    <Header />
-    <Switch>
-      <Route exact path='/' component={App} />
-      <Route path='/acm-w' component={ACM_W} />
-      <Route path='/events' component={Events} />
-      <Route path='/dsp' component={DSP} />
-      <Route path='/faq' component={FAQs} />
-      <Route path='/contact' component={Contact} />
-      <Route path='/code-of-conduct' component={CodeOfConduct} />
-      <Redirect to='/' />
-    </Switch>
-    <Footer />
-  </Router>
-);
-
 ReactDOM.render(
-  <Router>
-    <Root />
-  </Router>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <Router>
+      <PersistGate persistor={persistor}>
+        <Root />
+      </PersistGate>
+    </Router>
+  </Provider>,
+  document.getElementById('app')
 );

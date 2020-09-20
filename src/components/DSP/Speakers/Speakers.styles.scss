@@ -130,4 +130,9 @@
       display: none;
     }
   }
+
+  &.dark {
+    background-color: #323232;
+    color: #eee;
+  }
 }

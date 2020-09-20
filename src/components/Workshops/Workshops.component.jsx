@@ -6,9 +6,12 @@ import { ReactComponent as Image } from '../../assets/worskshop-section/workshop
 
 import './Workshops.styles.scss';
 
-const Workshops = () => {
+const Workshops = ({ darkMode }) => {
   return (
-    <section id='workshops' className='section section-workshops'>
+    <section
+      id='workshops'
+      className={`section section-workshops ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>Workshops</h1>
       </Fade>

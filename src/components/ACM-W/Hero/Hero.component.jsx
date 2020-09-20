@@ -10,11 +10,14 @@ import logo from '../../../assets/acm-logo/ACM-W-logo.png';
 
 import './Hero.styles.scss';
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   const colors = ['#f5f5f5', '#539dfe47'];
 
   return (
-    <section id='home' className='section section-acmw-hero'>
+    <section
+      id='home'
+      className={`section section-acmw-hero ${darkMode ? 'dark' : ''}`}
+    >
       <Fade delay={200}>
         <div className='logo-container'>
           <img src={logo} alt='ACM-W logo' />
@@ -40,7 +43,9 @@ const Hero = () => {
         </ScrollLink>
       </Fade>
 
-      <ParticlesBg type='circle' color={colors} num={200} bg={true} />
+      {!darkMode && (
+        <ParticlesBg type='circle' color={colors} num={200} bg={true} />
+      )}
     </section>
   );
 };

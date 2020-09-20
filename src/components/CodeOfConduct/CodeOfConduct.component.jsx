@@ -4,7 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 
 import './CodeOfConduct.styles.scss';
 
-const CodeOfConduct = () => {
+const CodeOfConduct = ({ darkMode }) => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
@@ -194,7 +194,10 @@ const CodeOfConduct = () => {
 
   return (
     <React.Fragment>
-      <section id='codeOfConduct' className='section section-codeOfConduct'>
+      <section
+        id='codeOfConduct'
+        className={`section section-codeOfConduct ${darkMode ? 'dark' : ''}`}
+      >
         <Fade bottom>
           <h1 className='section-heading'>Code of Conduct</h1>
         </Fade>

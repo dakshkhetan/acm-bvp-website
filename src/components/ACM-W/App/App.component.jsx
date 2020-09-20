@@ -8,14 +8,14 @@ import RoadAhead from '../RoadAhead/RoadAhead.component';
 
 import './App.styles.scss';
 
-const ACM_W = () => {
+const ACM_W = ({ darkMode }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className='acm-w'>
-      <Hero />
+    <div className={`acm-w ${darkMode ? 'dark' : ''}`}>
+      <Hero darkMode={darkMode} />
       <About />
       <Vision />
       <Accomplishments />

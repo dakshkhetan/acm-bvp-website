@@ -8,9 +8,12 @@ import { ReactComponent as Divider } from './../../assets/illustrations/divider.
 
 import './Divisions.styles.scss';
 
-const Divisions = ({ history }) => {
+const Divisions = ({ history, darkMode }) => {
   return (
-    <section id='divisions' className='section section-divisions'>
+    <section
+      id='divisions'
+      className={`section section-divisions ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>Divisions</h1>
       </Fade>

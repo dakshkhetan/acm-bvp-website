@@ -10,20 +10,20 @@ import Contact from './components/Contact/Contact.component';
 
 import './App.scss';
 
-const App = () => {
+const App = ({ darkMode }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className='App'>
-      <Hero />
-      <Workshops />
-      <Divisions />
-      <LatestTrends />
-      <Team />
-      <FAQs />
-      <Contact />
+    <div className={`App ${darkMode ? 'dark' : ''}`}>
+      <Hero darkMode={darkMode} />
+      <Workshops darkMode={darkMode} />
+      <Divisions darkMode={darkMode} />
+      <LatestTrends darkMode={darkMode} />
+      <Team darkMode={darkMode} />
+      <FAQs darkMode={darkMode} />
+      <Contact darkMode={darkMode} />
     </div>
   );
 };

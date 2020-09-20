@@ -11,9 +11,12 @@ import { ReactComponent as Illustration } from '../../assets/illustrations/readi
 
 import './LatestTrends.styles.scss';
 
-const LatestTrends = () => {
+const LatestTrends = ({ darkMode }) => {
   return (
-    <section id='latest-trends' className='section section-latestTrends'>
+    <section
+      id='latest-trends'
+      className={`section section-latestTrends ${darkMode ? 'dark' : ''}`}
+    >
       <Fade bottom>
         <h1 className='section-heading'>Latest Trends</h1>
       </Fade>

@@ -6,7 +6,6 @@
   align-items: center;
   color: #111;
   padding: 0 5%;
-  margin-bottom: 100px;
 
   .section-heading {
     text-align: center;
@@ -17,6 +16,7 @@
 
   .section-content {
     text-align: center;
+    padding-bottom: 100px;
 
     .workshop-container {
 
@@ -57,14 +57,14 @@
       width: 300px;
       position: absolute;
       right: 30px;
-      bottom: -90px;
+      bottom: 0;
     }
   }
 
   @media only screen and (max-width : 768px) {
 
     .section-content {
-      padding-bottom: 150px;
+      padding-bottom: 180px;
 
       .workshop-container {
 
@@ -93,7 +93,7 @@
     .illustration-container {
 
       .illustration {
-        width: 40%;
+        width: 35%;
       }
     }
   }
@@ -105,7 +105,7 @@
     }
 
     .section-content {
-      padding-bottom: 100px;
+      padding-bottom: 175px;
 
       .workshop-container {
 
@@ -135,6 +135,30 @@
 
       .illustration {
         width: 50%;
+      }
+    }
+  }
+
+  &.dark {
+    color: #eee;
+    background-color: #292929;
+
+    .workshop-container {
+
+      .carousel.slider-container {
+
+        .slick-slider.center {
+
+          .slick-next:before,
+          .slick-prev:before {
+            background-color: unset;
+            color: #fff;
+          }
+
+          .slick-dots li button:before {
+            color: #fff;
+          }
+        }
       }
     }
   }

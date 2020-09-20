@@ -10,7 +10,7 @@ import { ReactComponent as Illustration } from '../../assets/illustrations/faq.s
 
 import './FAQs.styles.scss';
 
-const FAQs = () => {
+const FAQs = ({ darkMode }) => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
@@ -32,13 +32,16 @@ const FAQs = () => {
 
   return (
     <React.Fragment>
-      <section id='faq' className='section section-faq'>
+      <section
+        id='faq'
+        className={`section section-faq ${darkMode ? 'dark' : ''}`}
+      >
         <Fade bottom>
           <h1 className='section-heading'>FAQs</h1>
           <div className='section-content'>
             <div className='faqs'>
               {faqs.map((faq, i) => (
-                <FAQ index={i} faq={faq} toggleFAQ={toggleFAQ} />
+                <FAQ key={i} index={i} faq={faq} toggleFAQ={toggleFAQ} />
               ))}
             </div>
             <div className='image-container'>

@@ -5,7 +5,7 @@ import './SideDrawer.styles.scss';
 
 class SideDrawer extends React.Component {
   render() {
-    const { show, scrollToTop } = this.props;
+    const { show, darkMode, scrollToTop } = this.props;
 
     const onClickHandler = (route) => {
       const { history, closeSideDrawer } = this.props;
@@ -14,7 +14,11 @@ class SideDrawer extends React.Component {
     };
 
     return (
-      <nav className={`${show ? `sidedrawer open` : `sidedrawer`}`}>
+      <nav
+        className={`${show ? `sidedrawer open` : `sidedrawer`} ${
+          darkMode ? `dark` : ''
+        }`}
+      >
         <div className='options-container'>
           <span className='option' onClick={() => scrollToTop()}>
             Home
