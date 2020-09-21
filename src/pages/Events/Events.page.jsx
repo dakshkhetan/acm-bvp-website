@@ -10,7 +10,7 @@ import { ReactComponent as Illustration } from '../../assets/illustrations/event
 
 import './Events.styles.scss';
 
-const Events = ({ darkMode }) => {
+const EventsPage = ({ darkMode }) => {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
@@ -41,4 +41,4 @@ const Events = ({ darkMode }) => {
   );
 };
 
-export default Events;
+export default EventsPage;

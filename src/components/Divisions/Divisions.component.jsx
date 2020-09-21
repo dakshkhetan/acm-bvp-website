@@ -3,7 +3,8 @@ import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 
 import image1 from '../../assets/acm-logo/ACM-W-logo.png';
-import image2 from '../../assets/acm-logo/ACM-Parivartan-logo.png';
+import image2_light from '../../assets/acm-logo/ACM-Parivartan-light.jpeg';
+import image2_dark from '../../assets/acm-logo/ACM-Parivartan-dark.jpeg';
 import { ReactComponent as Divider } from './../../assets/illustrations/divider.svg';
 
 import './Divisions.styles.scss';
@@ -46,7 +47,11 @@ const Divisions = ({ history, darkMode }) => {
         <div className='info-acmp'>
           <Fade bottom delay={150}>
             <div className='image-container'>
-              <img src={image2} className='image-acmp' alt='acm-parivartan' />
+              <img
+                src={darkMode ? image2_dark : image2_light}
+                className='image-acmp'
+                alt='acm-parivartan'
+              />
             </div>
           </Fade>
           <Fade bottom delay={250}>

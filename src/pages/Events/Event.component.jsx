@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import Carousel from '../Carousel/Carousel.component';
+import Carousel from '../../components/Carousel/Carousel.component';
 
 import { ReactComponent as Divider } from '../../assets/illustrations/section-divider.svg';
 

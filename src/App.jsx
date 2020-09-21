@@ -1,31 +1,40 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-import Hero from './components/Hero/Hero.component';
-import Workshops from './components/Workshops/Workshops.component';
-import Divisions from './components/Divisions/Divisions.component';
-import LatestTrends from './components/LatestTrends/LatestTrends.component';
-import Team from './components/Team/Team.component';
+import HomePage from './pages/Home/Home.page';
+import EventsPage from './pages/Events/Events.page';
+import ACM_W from './pages/ACM-W/ACM-W.page';
+
+import Header from './components/Header/Header.component';
+import DSP from './components/DSP/Dsp.component';
 import FAQs from './components/FAQs/FAQs.component';
 import Contact from './components/Contact/Contact.component';
+import CodeOfConduct from './components/CodeOfConduct/CodeOfConduct.component';
+import Footer from './components/Footer/Footer.component';
 
-import './App.scss';
+const App = ({ darkMode }) => (
+  <React.Fragment>
+    <Header />
+    <Switch>
+      <Route exact path='/' render={() => <HomePage darkMode={darkMode} />} />
+      <Route path='/acm-w' render={() => <ACM_W darkMode={darkMode} />} />
+      <Route path='/events' render={() => <EventsPage darkMode={darkMode} />} />
+      <Route path='/dsp' render={() => <DSP darkMode={darkMode} />} />
+      <Route path='/faq' render={() => <FAQs darkMode={darkMode} />} />
+      <Route path='/contact' render={() => <Contact darkMode={darkMode} />} />
+      <Route
+        path='/code-of-conduct'
+        render={() => <CodeOfConduct darkMode={darkMode} />}
+      />
+      <Redirect to='/' />
+    </Switch>
+    <Footer />
+  </React.Fragment>
+);
 
-const App = ({ darkMode }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const mapStateToProps = (state) => ({
+  darkMode: state.theme.darkMode
+});
 
-  return (
-    <div className={`App ${darkMode ? 'dark' : ''}`}>
-      <Hero darkMode={darkMode} />
-      <Workshops darkMode={darkMode} />
-      <Divisions darkMode={darkMode} />
-      <LatestTrends darkMode={darkMode} />
-      <Team darkMode={darkMode} />
-      <FAQs darkMode={darkMode} />
-      <Contact darkMode={darkMode} />
-    </div>
-  );
-};
-
-export default App;
+export default connect(mapStateToProps)(App);
