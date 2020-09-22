@@ -17,12 +17,11 @@ const About = () => {
 
             <Fade bottom delay={300}>
               <p className='text'>
-                Founded in (year), ACM-W BVP has had a total of (number) members
-                until date and has always advocated for the technical upliftment
-                of women. Affiliated with the global organisation of ACM–W, we
-                aim to empower and celebrate women providing a holistic
-                environment to grow along with global exposure to nurture their
-                skills.
+                Founded in 2013, ACM-W BVP has had a total of 100+ members until
+                date and has always advocated for the technical upliftment of
+                women. Affiliated with the global organisation of ACM–W, we aim
+                to empower and celebrate women providing a holistic environment
+                to grow along with global exposure to nurture their skills.
               </p>
             </Fade>
           </div>
