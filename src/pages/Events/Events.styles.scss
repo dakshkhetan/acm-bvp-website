@@ -11,7 +11,41 @@
     text-align: center;
     font-size: 2.8rem;
     padding-top: 40px;
-    margin: 0 0 60px;
+    margin: 0 0 10px;
+  }
+
+  .timeline-heading {
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 60px;
+
+    a {
+      color: darken(#539dfe, 20%);
+      text-decoration: underline;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      a {
+        color: #539dfe;
+      }
+    }
+
+    .icon {
+      animation: arrow-jump-right 1.5s infinite;
+    }
+
+    @keyframes arrow-jump-right {
+      0% {
+        opacity: 0.2;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+    }
   }
 
   .section-content {
@@ -19,7 +53,6 @@
     padding-bottom: 100px;
 
     .workshop-container {
-
       .info {
         display: flex;
         flex-direction: column;
@@ -52,7 +85,6 @@
   }
 
   .illustration-container {
-
     .illustration {
       width: 300px;
       position: absolute;
@@ -61,15 +93,12 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
-
+  @media only screen and (max-width: 768px) {
     .section-content {
       padding-bottom: 180px;
 
       .workshop-container {
-
         .info {
-
           h2 {
             font-size: 1.5rem;
           }
@@ -91,15 +120,13 @@
     }
 
     .illustration-container {
-
       .illustration {
         width: 35%;
       }
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     .section-heading {
       font-size: 2.2rem;
     }
@@ -108,9 +135,7 @@
       padding-bottom: 175px;
 
       .workshop-container {
-
         .info {
-
           h2 {
             font-size: 1.35rem;
           }
@@ -132,7 +157,6 @@
     }
 
     .illustration-container {
-
       .illustration {
         width: 50%;
       }
@@ -143,12 +167,21 @@
     color: #eee;
     background-color: #292929;
 
+    .timeline-heading {
+      a {
+        color: #539dfe;
+      }
+
+      &:hover {
+        a {
+          color: #fff;
+        }
+      }
+    }
+
     .workshop-container {
-
       .carousel.slider-container {
-
         .slick-slider.center {
-
           .slick-next:before,
           .slick-prev:before {
             background-color: unset;

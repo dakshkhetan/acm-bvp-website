@@ -49,7 +49,6 @@
         cursor: pointer;
 
         &.hover {
-
           &:before,
           &:after {
             width: 50%;
@@ -65,7 +64,7 @@
 
       &:before,
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -3px;
         width: 0px;
@@ -74,7 +73,7 @@
         transition: all 0.2s ease-in-out;
         transition-duration: 0.5s;
         opacity: 0;
-        background-color: darken(#539DFE, 5%);
+        background-color: darken(#539dfe, 5%);
       }
 
       &:before {
@@ -92,8 +91,7 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 760px) {
     .options {
       display: none;
     }

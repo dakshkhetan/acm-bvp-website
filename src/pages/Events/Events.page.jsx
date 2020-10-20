@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -24,6 +25,13 @@ const EventsPage = ({ darkMode }) => {
         <Fade bottom>
           <h1 className='section-heading'>Events</h1>
         </Fade>
+
+        <span className='timeline-heading'>
+          <Link to='/events/timeline'>
+            <span>Checkout Our Event Calender Timeline</span>{' '}
+            <i className='fas fa-arrow-right icon'></i>
+          </Link>
+        </span>
 
         <div className='section-content'>
           {workshops.map((workshop) => (

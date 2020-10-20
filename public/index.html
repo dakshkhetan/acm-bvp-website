@@ -69,13 +69,102 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
     <title>ACM BVP</title>
+
+    <style>
+      #initial-loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        transition: opacity 0.6s;
+        z-index: 1;
+      }
+
+      #initial-loading[data-is-hide='true'] {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #initial-loading .spinner {
+        display: flex;
+      }
+
+      #initial-loading .bounce {
+        width: 18px;
+        height: 18px;
+        margin: 0 3px;
+        background-color: #999999;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      }
+
+      #initial-loading .bounce:nth-child(1) {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+
+      #initial-loading .bounce:nth-child(2) {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+
+      @-webkit-keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript
       >Sorry, but ACM BVP requires you to enable JavaScript to view and run our
       website!</noscript
     >
-    <div id="app"></div>
+    <div id="app">
+      <div id="initial-loading">
+        <div class="spinner">
+          <div class="bounce"></div>
+          <div class="bounce"></div>
+          <div class="bounce"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
