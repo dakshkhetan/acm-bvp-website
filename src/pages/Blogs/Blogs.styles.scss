@@ -1,0 +1,151 @@
+.section-blogs {
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111;
+  padding: 0 5%;
+
+  .section-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 40px;
+    margin: 0 0 10px;
+  }
+
+  .illustration-container {
+    .illustration {
+      width: 250px;
+      position: absolute;
+      left: calc(50% - 30px);
+      top: 70px;
+    }
+  }
+
+  .section-content {
+    text-align: left;
+    margin-top: 200px;
+    padding-bottom: 180px;
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 50px;
+
+      .blog {
+        position: relative;
+        width: 300px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.15);
+
+        img {
+          width: 100%;
+          border: 2px solid #539dfe;
+        }
+
+        time {
+          color: darken(#539dfe, 15%);
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+          margin: 10px 0;
+        }
+
+        span {
+          color: #585858;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        a {
+          .icon {
+            position: absolute;
+            right: 10px;
+            bottom: -20px;
+            background-color: #fff;
+            color: #428ef3;
+            font-size: 3rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .section-content {
+      padding-bottom: 150px;
+
+      .blog-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        .blog {
+          width: 300px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 675px) {
+    .section-heading {
+      font-size: 2.2rem;
+    }
+
+    .illustration-container {
+      .illustration {
+        width: 200px;
+      }
+    }
+
+    .section-content {
+      margin-top: 170px;
+      padding-bottom: 120px;
+
+      .blog-container {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+
+        .blog {
+          width: 300px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    color: #eee;
+    background-color: #292929;
+
+    .section-content {
+      .blog-container {
+        .blog {
+          background-color: #414141;
+
+          time {
+            color: #539dfe;
+          }
+
+          span {
+            color: #bdbdbd;
+          }
+
+          a {
+            .icon {
+              background-color: #414141;
+            }
+          }
+        }
+      }
+    }
+  }
+}

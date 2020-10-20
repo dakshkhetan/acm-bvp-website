@@ -15,7 +15,6 @@
   }
 
   .timeline-heading {
-    border-radius: 30px;
     padding: 10px;
     margin-bottom: 60px;
 
@@ -129,6 +128,17 @@
   @media only screen and (max-width: 425px) {
     .section-heading {
       font-size: 2.2rem;
+    }
+
+    .timeline-heading {
+      width: 90%;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 50px;
+
+      a {
+        font-size: 1rem;
+      }
     }
 
     .section-content {

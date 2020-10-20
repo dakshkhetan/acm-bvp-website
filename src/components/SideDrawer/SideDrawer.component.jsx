@@ -26,6 +26,9 @@ class SideDrawer extends React.Component {
           <span className='option' onClick={() => onClickHandler('events')}>
             Events
           </span>
+          <span className='option' onClick={() => onClickHandler('blogs')}>
+            Blogs
+          </span>
           <span className='option' onClick={() => onClickHandler('acm-w')}>
             ACM-W
           </span>

@@ -34,15 +34,17 @@ const Timeline = ({ darkMode }) => {
           <h1 className='section-heading'>Events Timeline</h1>
         </Fade>
 
-        <div className='section-content'>
-          {timelineData.length > 0 && (
-            <div className='timeline-container'>
-              {timelineData.map((data, idx) => (
-                <TimelineItem data={data} key={idx} />
-              ))}
-            </div>
-          )}
-        </div>
+        <Fade bottom delay={150}>
+          <div className='section-content'>
+            {timelineData.length > 0 && (
+              <div className='timeline-container'>
+                {timelineData.map((data, idx) => (
+                  <TimelineItem data={data} key={idx} />
+                ))}
+              </div>
+            )}
+          </div>
+        </Fade>
       </section>
     </React.Fragment>
   );

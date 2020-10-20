@@ -26,12 +26,14 @@ const EventsPage = ({ darkMode }) => {
           <h1 className='section-heading'>Events</h1>
         </Fade>
 
-        <span className='timeline-heading'>
-          <Link to='/events/timeline'>
-            <span>Checkout Our Event Calender Timeline</span>{' '}
-            <i className='fas fa-arrow-right icon'></i>
-          </Link>
-        </span>
+        <Fade bottom delay={150}>
+          <span className='timeline-heading'>
+            <Link to='/events/timeline'>
+              <span>Checkout Our Event Calender Timeline</span>{' '}
+              <i className='fas fa-arrow-right icon'></i>
+            </Link>
+          </span>
+        </Fade>
 
         <div className='section-content'>
           {workshops.map((workshop) => (

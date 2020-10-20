@@ -29,6 +29,7 @@ const Hero = ({ darkMode }) => {
         <h1 className='section-heading hero-heading'>
           Association for Computing Machinery
         </h1>
+        <h2 className='sub-hero-heading'>Student Chapter BVP</h2>
       </Fade>
 
       <Fade bottom delay={350}>

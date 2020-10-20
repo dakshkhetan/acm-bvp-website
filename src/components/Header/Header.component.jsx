@@ -115,6 +115,9 @@ class Header extends React.Component {
       <Link to='/events' className={`${className} hover`}>
         Events
       </Link>
+      <Link to='/blogs' className={`${className} hover`}>
+        Blogs
+      </Link>
       <span
         className={`${className} hover`}
         onClick={() => this.scrollToTopACMW()}

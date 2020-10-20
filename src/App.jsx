@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import HomePage from './pages/Home/Home.page';
 import EventsPage from './pages/Events/Events.page';
+import Blogs from './pages/Blogs/Blogs.page';
 import ACM_W from './pages/ACM-W/ACM-W.page';
 
 import Header from './components/Header/Header.component';
@@ -29,6 +30,7 @@ const App = ({ darkMode }) => (
         path='/events/timeline'
         render={() => <Timeline darkMode={darkMode} />}
       />
+      <Route path='/blogs' render={() => <Blogs darkMode={darkMode} />} />
       <Route path='/dsp' render={() => <DSP darkMode={darkMode} />} />
       <Route path='/faq' render={() => <FAQs darkMode={darkMode} />} />
       <Route path='/contact' render={() => <Contact darkMode={darkMode} />} />

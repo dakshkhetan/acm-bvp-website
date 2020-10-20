@@ -23,6 +23,13 @@
   .hero-heading {
     padding: 5px !important;
     font-size: 2.3rem !important;
+    margin: 0;
+  }
+
+  .sub-hero-heading {
+    font-size: 1.6rem;
+    padding: 5px;
+    margin: 0;
   }
 
   .hero-icon {
@@ -31,7 +38,7 @@
     cursor: pointer;
   }
 
-  @media only screen and (max-width : 768px) {
+  @media only screen and (max-width: 768px) {
     height: 90vh !important;
     justify-content: center;
 
@@ -45,7 +52,7 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
+  @media only screen and (max-width: 425px) {
     height: 95vh !important;
 
     canvas {
@@ -60,8 +67,12 @@
       font-size: 1.75rem !important;
     }
 
+    .sub-hero-heading {
+      font-size: 1.3rem;
+    }
+
     .hero-icon {
-      margin-top: 30px;
+      margin-top: 50px;
       font-size: 1.8rem;
     }
   }
