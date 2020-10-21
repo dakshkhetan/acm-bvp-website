@@ -13,7 +13,7 @@
   </p>
 
   <p align="center">
-    <a href="https://bvcoe.acm.org">Website</a>
+    <a href="https://bvcoe.acm.org">Checkout Website</a>
   </p>
 </p>
 
@@ -59,11 +59,13 @@ npm start
 📦src
  ┣ 📂assets
  ┃ ┣ 📂acm-logo
+ ┃ ┣ 📂blogs
  ┃ ┣ 📂display-pics
  ┃ ┣ 📂dsp-sessions
  ┃ ┣ 📂dsp-speakers
  ┃ ┣ 📂gallery
  ┃ ┣ 📂illustrations
+ ┃ ┣ 📂month-art-cover
  ┃ ┣ 📂technology
  ┃ ┣ 📂worskshop-section
  ┣ 📂components
@@ -90,15 +92,19 @@ npm start
  ┃ ┣ 📂Person
  ┃ ┣ 📂SideDrawer
  ┃ ┣ 📂Team
+ ┃ ┣ 📂Timeline
  ┃ ┣ 📂Toggle
  ┃ ┗ 📂Workshops
  ┣ 📂data
  ┃ ┣ 📜accomplishments.data.js
+ ┃ ┗ 📜blogs.data.js
  ┃ ┣ 📜faq.data.js
  ┃ ┣ 📜team.data.js
+ ┃ ┗ 📜timeline.data.js
  ┃ ┗ 📜workshops.data.js
  ┣ 📂pages
  ┃ ┣ 📂ACM-W
+ ┃ ┣ 📂Blogs
  ┃ ┣ 📂Events
  ┃ ┗ 📂Home
  ┣ 📂redux

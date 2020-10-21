@@ -40,26 +40,8 @@ export const timelineData = [
       </ul>
     )
   },
-  // {
-  //   month: "May'20",
-  //   cover: require('../assets/month-art-cover/may.jpg'),
-  //   info: (
-  //     <ul>
-  //       <li>None</li>
-  //     </ul>
-  //   )
-  // },
-  // {
-  //   month: "Jun'20",
-  //   cover: require('../assets/month-art-cover/jun.jpg'),
-  //   info: (
-  //     <ul>
-  //       <li>None</li>
-  //     </ul>
-  //   )
-  // },
   {
-    month: "Jul'20",
+    month: "May-Jul'20",
     cover: require('../assets/month-art-cover/jul.jpg'),
     info: (
       <ul>
