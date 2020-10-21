@@ -6,8 +6,7 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/jan.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Web Development Sessions</li>
       </ul>
     )
   },
@@ -16,58 +15,55 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/feb.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Hour Of Code</li>
+        <li>Playing Around C++</li>
       </ul>
     )
   },
-  {
-    month: "Mar'20",
-    cover: require('../assets/month-art-cover/mar.jpg'),
-    info: (
-      <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
-      </ul>
-    )
-  },
+  // {
+  //   month: "Mar'20",
+  //   cover: require('../assets/month-art-cover/mar.jpg'),
+  //   info: (
+  //     <ul>
+  //       <li>None</li>
+  //     </ul>
+  //   )
+  // },
   {
     month: "Apr'20",
     cover: require('../assets/month-art-cover/apr.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Distinguished Speaker Program</li>
+        <li>Code-Intine Bytes</li>
+        <li>Week Of Learning</li>
       </ul>
     )
   },
-  {
-    month: "May'20",
-    cover: require('../assets/month-art-cover/may.jpg'),
-    info: (
-      <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
-      </ul>
-    )
-  },
-  {
-    month: "Jun'20",
-    cover: require('../assets/month-art-cover/jun.jpg'),
-    info: (
-      <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
-      </ul>
-    )
-  },
+  // {
+  //   month: "May'20",
+  //   cover: require('../assets/month-art-cover/may.jpg'),
+  //   info: (
+  //     <ul>
+  //       <li>None</li>
+  //     </ul>
+  //   )
+  // },
+  // {
+  //   month: "Jun'20",
+  //   cover: require('../assets/month-art-cover/jun.jpg'),
+  //   info: (
+  //     <ul>
+  //       <li>None</li>
+  //     </ul>
+  //   )
+  // },
   {
     month: "Jul'20",
     cover: require('../assets/month-art-cover/jul.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Team Hiring</li>
       </ul>
     )
   },
@@ -76,8 +72,9 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/aug.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Summer DSP by Mr. Ankit Kariryaa</li>
+        <li>Cloud Computing & Microsoft Azure Session</li>
+        <li>Project Showdown (Round 1)</li>
       </ul>
     )
   },
@@ -86,8 +83,11 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/sep.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Project Showdown (Final Round)</li>
+        <li>
+          Introduction to Google Crowdsource (powered by Google Assistant)
+        </li>
+        <li>Cognitive Learning Session</li>
       </ul>
     )
   },
@@ -96,8 +96,8 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/oct.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>Fun Events (Meme Wars, Video Editing Contest)</li>
+        <li>Hacktoberfest 2020</li>
       </ul>
     )
   },
@@ -106,19 +106,17 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/nov.jpg'),
     info: (
       <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
-      </ul>
-    )
-  },
-  {
-    month: "Dec'20",
-    cover: require('../assets/month-art-cover/dec.jpg'),
-    info: (
-      <ul>
-        <li>Event 1 Heading</li>
-        <li>Event 2 Heading</li>
+        <li>BVEST Events (coming soon)</li>
       </ul>
     )
   }
+  // {
+  //   month: "Dec'20",
+  //   cover: require('../assets/month-art-cover/dec.jpg'),
+  //   info: (
+  //     <ul>
+  //       <li>TBD</li>
+  //     </ul>
+  //   )
+  // }
 ];
