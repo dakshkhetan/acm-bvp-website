@@ -5,34 +5,12 @@ export const blogsData = [
   {
     key: '1',
     code: 'blog-1',
-    date: "18th Oct'20",
-    title: 'Introduction to Blogs',
-    author: 'Elon Musk',
+    date: "28th May'20",
+    title: 'Coding Linear Regression',
+    author: 'Rasansha Luthra',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum risus nec efficitur porta. Pellentesque et gravida risus. Morbi eget euismod sed.',
-    link: 'https://medium.com/',
-    image: require('../assets/blogs/placeholder.jpg')
-  },
-  {
-    key: '2',
-    code: 'blog-2',
-    date: "18th Oct'20",
-    title: 'Introduction to Blogs',
-    author: 'Elon Musk',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum risus nec efficitur porta. Pellentesque et gravida risus. Morbi eget euismod sed.',
-    link: 'https://medium.com/',
-    image: require('../assets/blogs/placeholder.jpg')
-  },
-  {
-    key: '3',
-    code: 'blog-3',
-    date: "18th Oct'20",
-    title: 'Introduction to Blogs',
-    author: 'Elon Musk',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum risus nec efficitur porta. Pellentesque et gravida risus. Morbi eget euismod sed.',
-    link: 'https://medium.com/',
-    image: require('../assets/blogs/placeholder.jpg')
+      'An article to make the person more familiar and simplify the concept of linear regression. It is a step by step guide and explanation of writing the code of linear regression using python language.',
+    link: 'https://link.medium.com/NAQlpHWOVab',
+    image: require('../assets/blogs/blog-1.jpg')
   }
 ];

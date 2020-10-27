@@ -5,10 +5,10 @@ const Blog = ({ blog }) => {
   const { image, code, date, title, description, author, link } = blog;
 
   const truncate = (str) => {
-    if (str.length <= 120) {
+    if (str.length <= 150) {
       return str;
     }
-    return str.slice(0, 120) + '...';
+    return str.slice(0, 150) + '...';
   };
 
   return (
