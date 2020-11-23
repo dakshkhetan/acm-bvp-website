@@ -88,7 +88,16 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/nov.jpg'),
     info: (
       <ul>
-        <li>BVEST Events (coming soon)</li>
+        <li>
+          <b>BVEST Events:</b>
+        </li>
+        <li>Innovage</li>
+        <li>Caseopedia</li>
+        <li>Clash of Codes</li>
+        <br />
+        <li>Webinar Series on Master’s Admission</li>
+        <li>Cyber Crimes & Online Attacks Webinar</li>
+        <li>ESP - "Mystery Of Malwares" (by Ms. Chenny Ren)</li>
       </ul>
     )
   }
