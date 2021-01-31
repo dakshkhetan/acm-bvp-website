@@ -100,14 +100,24 @@ export const timelineData = [
         <li>ESP - "Mystery Of Malwares" (by Ms. Chenny Ren)</li>
       </ul>
     )
+  },
+  {
+    month: "Dec'20",
+    cover: require('../assets/month-art-cover/dec.jpg'),
+    info: (
+      <ul>
+        <li>Hour Of Code</li>
+      </ul>
+    )
+  },
+  {
+    month: "Jan'21",
+    cover: require('../assets/month-art-cover/jan.jpg'),
+    info: (
+      <ul>
+        <li>Informal Orientation</li>
+        <li>Web Development Sessions (Coming Soon)</li>
+      </ul>
+    )
   }
-  // {
-  //   month: "Dec'20",
-  //   cover: require('../assets/month-art-cover/dec.jpg'),
-  //   info: (
-  //     <ul>
-  //       <li>TBD</li>
-  //     </ul>
-  //   )
-  // }
 ];
