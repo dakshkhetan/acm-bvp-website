@@ -40,7 +40,7 @@ const Contact = ({ darkMode }) => {
               <Fade bottom delay={500}>
                 <div className='mail-btn'>
                   <span>
-                    <a href='mailto:acmbvcoe@gmail.com'>Write To Us</a>
+                    <a href='mailto:contact@bvcoe.acm.org'>Write To Us</a>
                   </span>
                 </div>
               </Fade>
