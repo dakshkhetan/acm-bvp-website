@@ -115,8 +115,25 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/jan.jpg'),
     info: (
       <ul>
-        <li>Informal Orientation</li>
-        <li>Web Development Sessions (Coming Soon)</li>
+        <li>Informal Freshers' Orientation</li>
+      </ul>
+    )
+  },
+  {
+    month: "Feb'21",
+    cover: require('../assets/month-art-cover/feb.jpg'),
+    info: (
+      <ul>
+        <li>Web Development Session 1 - 27th Feb</li>
+      </ul>
+    )
+  },
+  {
+    month: "Mar'21",
+    cover: require('../assets/month-art-cover/mar.jpg'),
+    info: (
+      <ul>
+        <li>Web Development Session 2 (Coming Soon)</li>
       </ul>
     )
   }
