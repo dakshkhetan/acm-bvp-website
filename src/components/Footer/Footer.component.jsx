@@ -58,7 +58,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <h1 className='heading'>COPYRIGHT © 2020</h1>
+      <h1 className='heading'>COPYRIGHT © {new Date().getFullYear()}</h1>
       <p className='sub-heading'>
         Powered by <a href='http://bvcoe.acm.org/'>ACM BVP</a>. All rights
         reserved.
