@@ -133,7 +133,8 @@ export const timelineData = [
     cover: require('../assets/month-art-cover/mar.jpg'),
     info: (
       <ul>
-        <li>Web Development Session 2 (Coming Soon)</li>
+        <li>Web Development Session 2 - 20th March</li>
+        <li>DSP'21 with Dr. Juan Wachs as the speaker (Coming Soon)</li>
       </ul>
     )
   }
