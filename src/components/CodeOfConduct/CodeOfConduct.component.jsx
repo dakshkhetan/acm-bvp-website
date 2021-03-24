@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useEffect } from "react";
+import Fade from "react-reveal/Fade";
+import { animateScroll as scroll } from "react-scroll";
 
-import './CodeOfConduct.styles.scss';
+import "./CodeOfConduct.styles.scss";
 
 const CodeOfConduct = ({ darkMode }) => {
   useEffect(() => {
@@ -10,7 +10,7 @@ const CodeOfConduct = ({ darkMode }) => {
   }, []);
 
   const content = () => (
-    <div className='section-content'>
+    <div className="section-content">
       <h2>1. Purpose</h2>
       <p>
         A primary goal of ACM BVP is to be inclusive to the largest number of
@@ -195,11 +195,11 @@ const CodeOfConduct = ({ darkMode }) => {
   return (
     <React.Fragment>
       <section
-        id='codeOfConduct'
-        className={`section section-codeOfConduct ${darkMode ? 'dark' : ''}`}
+        id="codeOfConduct"
+        className={`section section-codeOfConduct ${darkMode ? "dark" : ""}`}
       >
         <Fade bottom>
-          <h1 className='section-heading'>Code of Conduct</h1>
+          <h1 className="section-heading">Code of Conduct</h1>
         </Fade>
         {content()}
       </section>

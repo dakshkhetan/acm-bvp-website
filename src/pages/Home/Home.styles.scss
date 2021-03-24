@@ -1,5 +1,4 @@
 .App {
-
   .section {
     height: 760px;
     color: #111;
@@ -24,8 +23,7 @@
       margin-top: 0;
     }
 
-    @media only screen and (max-width : 425px) {
-
+    @media only screen and (max-width: 425px) {
       .section-heading {
         font-size: 2.4rem;
       }

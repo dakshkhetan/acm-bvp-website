@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from "react";
 
-import './Toggle.scss';
+import "./Toggle.scss";
 
 // Copyright 2015-present Drifty Co.
 // http://drifty.com/
@@ -37,7 +37,7 @@ export default class Toggle extends PureComponent {
   }
 
   componentWillReceiveProps(nextProps) {
-    if ('checked' in nextProps) {
+    if ("checked" in nextProps) {
       this.setState({ checked: !!nextProps.checked });
       this.previouslyChecked = !!nextProps.checked;
     }
@@ -146,11 +146,11 @@ export default class Toggle extends PureComponent {
   render() {
     const { className, icons: _icons, ...inputProps } = this.props;
     const classes =
-      'react-toggle' +
-      (this.state.checked ? ' react-toggle--checked' : '') +
-      (this.state.hasFocus ? ' react-toggle--focus' : '') +
-      (this.props.disabled ? ' react-toggle--disabled' : '') +
-      (className ? ' ' + className : '');
+      "react-toggle" +
+      (this.state.checked ? " react-toggle--checked" : "") +
+      (this.state.hasFocus ? " react-toggle--focus" : "") +
+      (this.props.disabled ? " react-toggle--disabled" : "") +
+      (className ? " " + className : "");
     return (
       <div
         className={classes}
@@ -160,15 +160,15 @@ export default class Toggle extends PureComponent {
         onTouchEnd={this.handleTouchEnd}
         onTouchCancel={this.handleTouchCancel}
       >
-        <div className='react-toggle-track'>
-          <div className='react-toggle-track-check'>
-            {this.getIcon('checked')}
+        <div className="react-toggle-track">
+          <div className="react-toggle-track-check">
+            {this.getIcon("checked")}
           </div>
-          <div className='react-toggle-track-x'>
-            {this.getIcon('unchecked')}
+          <div className="react-toggle-track-x">
+            {this.getIcon("unchecked")}
           </div>
         </div>
-        <div className='react-toggle-thumb' />
+        <div className="react-toggle-thumb" />
 
         <input
           {...inputProps}
@@ -177,9 +177,9 @@ export default class Toggle extends PureComponent {
           }}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
-          className='react-toggle-screenreader-only'
-          type='checkbox'
-          aria-label='Switch between Dark and Light mode'
+          className="react-toggle-screenreader-only"
+          type="checkbox"
+          aria-label="Switch between Dark and Light mode"
         />
       </div>
     );

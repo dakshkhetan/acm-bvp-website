@@ -1,22 +1,22 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import Fade from "react-reveal/Fade";
 
-import { ReactComponent as Image } from '../../../assets/illustrations/vision.svg';
+import { ReactComponent as Image } from "../../../assets/illustrations/vision.svg";
 
-import './Vision.styles.scss';
+import "./Vision.styles.scss";
 
 const Vision = () => {
   return (
     <React.Fragment>
-      <section id='vision' className='section section-acmw-vision'>
-        <div className='section-content'>
-          <div className='info'>
+      <section id="vision" className="section section-acmw-vision">
+        <div className="section-content">
+          <div className="info">
             <Fade bottom delay={200}>
-              <h2 className='heading'>Our vision</h2>
+              <h2 className="heading">Our vision</h2>
             </Fade>
 
             <Fade bottom delay={300}>
-              <p className='text'>
+              <p className="text">
                 Exposing women undergraduate students in computer science and
                 related programs to the computer science research world and
                 encouraging them to continue on this to the next level. We
@@ -27,8 +27,8 @@ const Vision = () => {
           </div>
 
           <Fade left delay={400}>
-            <div className='illustration-container'>
-              <div className='illustration'>
+            <div className="illustration-container">
+              <div className="illustration">
                 <Image />
               </div>
             </div>

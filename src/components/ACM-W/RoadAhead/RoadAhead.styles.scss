@@ -52,8 +52,7 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
-
+  @media only screen and (max-width: 768px) {
     .section-content {
       flex-direction: column;
       align-items: center;
@@ -66,7 +65,6 @@
       }
 
       .illustration-container {
-
         .illustration {
           width: 300px;
           margin-top: -20px;
@@ -75,8 +73,7 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     padding: 15px 5% 40px !important;
 
     .section-heading {
@@ -85,14 +82,12 @@
     }
 
     .sub-heading {
-
       h2 {
         font-size: 1.55rem;
       }
     }
 
     .section-content {
-
       .info {
         width: 90%;
         text-align: center;
@@ -105,7 +100,6 @@
       }
 
       .illustration-container {
-
         .illustration {
           width: 220px;
           margin-top: -30px;

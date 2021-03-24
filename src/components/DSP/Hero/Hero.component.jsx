@@ -1,21 +1,21 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import Fade from "react-reveal/Fade";
 
-import { ReactComponent as Image } from '../../../assets/acm-logo/ACM-DSP.svg';
+import { ReactComponent as Image } from "../../../assets/acm-logo/ACM-DSP.svg";
 
-import './Hero.styles.scss';
+import "./Hero.styles.scss";
 
 const Hero = ({ darkMode }) => {
   return (
     <section
-      id='dsp-hero'
-      className={`section-dsp-hero ${darkMode ? 'dark' : ''}`}
+      id="dsp-hero"
+      className={`section-dsp-hero ${darkMode ? "dark" : ""}`}
     >
       <Fade bottom>
-        <h1 className='section-heading'>ACM Distinguished Speakers Program</h1>
+        <h1 className="section-heading">ACM Distinguished Speakers Program</h1>
       </Fade>
-      <div className='section-content'>
-        <div className='info'>
+      <div className="section-content">
+        <div className="info">
           <Fade bottom delay={150}>
             <h2>ACM DSP</h2>
           </Fade>
@@ -32,7 +32,7 @@ const Hero = ({ darkMode }) => {
           </Fade>
         </div>
         <Fade right delay={100}>
-          <Image className='image-container' />
+          <Image className="image-container" />
         </Fade>
       </div>
     </section>

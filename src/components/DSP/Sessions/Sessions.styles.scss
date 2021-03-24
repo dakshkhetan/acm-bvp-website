@@ -74,7 +74,7 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
+  @media only screen and (max-width: 768px) {
     height: auto !important;
 
     .section-content {
@@ -124,8 +124,7 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     .section-content {
       width: 100%;
       margin-top: -10px;
@@ -138,7 +137,6 @@
         }
 
         .info {
-
           h2 {
             font-size: 1.1rem;
 

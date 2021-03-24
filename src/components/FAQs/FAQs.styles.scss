@@ -12,7 +12,6 @@
   }
 
   .section-content {
-
     .faqs {
       width: 85%;
       max-width: 1024px;
@@ -34,7 +33,7 @@
           cursor: pointer;
 
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             top: 50%;
             right: 0px;
@@ -42,7 +41,7 @@
             width: 25px;
             height: 25px;
             transition: all 0.4s ease-out;
-            background-image: url('../../assets/illustrations/arrow.svg');
+            background-image: url("../../assets/illustrations/arrow.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -73,7 +72,6 @@
         }
 
         &.open {
-
           .faq-question {
             margin-bottom: 25px;
 
@@ -102,10 +100,8 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
-
+  @media only screen and (max-width: 768px) {
     .section-content {
-
       .image-container {
         margin-top: 60px;
         height: 190px;
@@ -117,15 +113,12 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     .section-content {
-
       .faqs {
         width: 100%;
 
         .faq {
-
           .faq-question {
             font-size: 1rem;
             padding-right: 18%;
@@ -136,7 +129,6 @@
           }
 
           &.open {
-
             .faq-question {
               margin-bottom: 15px;
             }
@@ -159,8 +151,7 @@
     background-color: #292929;
     color: #eee;
 
-    .section-content>.faqs {
-
+    .section-content > .faqs {
       .faq {
         background-color: #000;
         color: #fff;

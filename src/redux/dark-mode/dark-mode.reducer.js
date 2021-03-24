@@ -1,4 +1,4 @@
-import { DARK_MODE } from './dark-mode.types';
+import { DARK_MODE } from "./dark-mode.types";
 
 const INITIAL_STATE = {
   darkMode: false

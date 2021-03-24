@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
-import Hero from './Hero/Hero.component';
-import Speakers from './Speakers/Speakers.component';
-import Sessions from './Sessions/Sessions.component';
+import Hero from "./Hero/Hero.component";
+import Speakers from "./Speakers/Speakers.component";
+import Sessions from "./Sessions/Sessions.component";
 
-import './Dsp.styles.scss';
+import "./Dsp.styles.scss";
 
 const DSP = ({ darkMode }) => {
   useEffect(() => {
@@ -15,8 +15,8 @@ const DSP = ({ darkMode }) => {
   return (
     <React.Fragment>
       <section
-        id='dsp'
-        className={`section section-dsp ${darkMode ? 'dark' : ''}`}
+        id="dsp"
+        className={`section section-dsp ${darkMode ? "dark" : ""}`}
       >
         <Hero darkMode={darkMode} />
         <Speakers darkMode={darkMode} />

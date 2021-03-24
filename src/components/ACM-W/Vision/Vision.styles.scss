@@ -39,8 +39,7 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
-
+  @media only screen and (max-width: 768px) {
     .section-content {
       flex-direction: column;
       align-items: center;
@@ -52,7 +51,6 @@
       }
 
       .illustration-container {
-
         .illustration {
           width: 350px;
         }
@@ -60,12 +58,10 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     padding: 15px 5% 40px !important;
 
     .section-content {
-
       .info {
         width: 93%;
         text-align: center;
@@ -82,7 +78,6 @@
       }
 
       .illustration-container {
-
         .illustration {
           width: 220px;
           margin-top: -30px;

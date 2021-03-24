@@ -1,5 +1,5 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import Fade from "react-reveal/Fade";
 
 const Blog = ({ blog }) => {
   const { image, code, date, title, description, author, link } = blog;
@@ -8,14 +8,14 @@ const Blog = ({ blog }) => {
     if (str.length <= 150) {
       return str;
     }
-    return str.slice(0, 150) + '...';
+    return str.slice(0, 150) + "...";
   };
 
   return (
     <React.Fragment>
       <div className={`blog ${code}`}>
         <Fade delay={300}>
-          <img src={image} alt='cover' />
+          <img src={image} alt="cover" />
         </Fade>
         <Fade delay={400}>
           <time>{date}</time>
@@ -30,8 +30,8 @@ const Blog = ({ blog }) => {
           <span>By {author}</span>
         </Fade>
         <Fade delay={400}>
-          <a href={link} target='_blank' rel='noopener noreferrer'>
-            <i className='fas fa-arrow-circle-right icon'></i>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-arrow-circle-right icon"></i>
           </a>
         </Fade>
       </div>

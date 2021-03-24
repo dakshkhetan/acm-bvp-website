@@ -1,31 +1,31 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import Fade from "react-reveal/Fade";
 
-import { accomplishments } from '../../../data/accomplishments.data';
+import { accomplishments } from "../../../data/accomplishments.data";
 
-import Accomplishment from './Accomplishment.component';
+import Accomplishment from "./Accomplishment.component";
 
-import { ReactComponent as Image } from '../../../assets/illustrations/accomplishments.svg';
-import { ReactComponent as ArrowLeft } from '../../../assets/illustrations/arrow-left.svg';
-import { ReactComponent as ArrowRight } from '../../../assets/illustrations/arrow-right.svg';
+import { ReactComponent as Image } from "../../../assets/illustrations/accomplishments.svg";
+import { ReactComponent as ArrowLeft } from "../../../assets/illustrations/arrow-left.svg";
+import { ReactComponent as ArrowRight } from "../../../assets/illustrations/arrow-right.svg";
 
-import './Accomplishments.styles.scss';
+import "./Accomplishments.styles.scss";
 
 const Accomplishments = () => {
   return (
     <React.Fragment>
       <section
-        id='accomplishments'
-        className='section section-acmw-accomplishments'
+        id="accomplishments"
+        className="section section-acmw-accomplishments"
       >
         <Fade bottom>
-          <h1 className='section-heading'>Accomplishments</h1>
+          <h1 className="section-heading">Accomplishments</h1>
         </Fade>
 
-        <div className='section-content'>
-          <div className='info'>
+        <div className="section-content">
+          <div className="info">
             <Fade bottom delay={200}>
-              <p className='text'>
+              <p className="text">
                 ACM-W has always been a creative and collaborative force.
                 Following are few of the biggest events, we at ACM-W, have
                 successfully organised to celebrate innovation in thought and
@@ -34,15 +34,15 @@ const Accomplishments = () => {
             </Fade>
 
             <Fade right delay={200}>
-              <div className='illustration-container'>
-                <div className='illustration'>
+              <div className="illustration-container">
+                <div className="illustration">
                   <Image />
                 </div>
               </div>
             </Fade>
           </div>
 
-          <div className='accomplishments'>
+          <div className="accomplishments">
             {accomplishments.map((accomplishment) => (
               <Accomplishment
                 key={accomplishment.key}
@@ -50,16 +50,16 @@ const Accomplishments = () => {
               />
             ))}
 
-            <div className='honorary-mentions'>
+            <div className="honorary-mentions">
               <Fade right delay={250}>
-                <div className='arrow-left'>
+                <div className="arrow-left">
                   <ArrowLeft />
                 </div>
               </Fade>
-              <div className='accomplishment'>
+              <div className="accomplishment">
                 <Fade bottom delay={150}>
-                  <span className='title'>Honorary Mentions</span>
-                  <span className='date'>
+                  <span className="title">Honorary Mentions</span>
+                  <span className="date">
                     (6th - 8th November 2019, Bangalore)
                   </span>
                 </Fade>
@@ -76,7 +76,7 @@ const Accomplishments = () => {
                 </Fade>
               </div>
               <Fade left delay={250}>
-                <div className='arrow-right'>
+                <div className="arrow-right">
                   <ArrowRight />
                 </div>
               </Fade>

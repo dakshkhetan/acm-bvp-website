@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const timelineData = [
+const timeline = [
   {
     month: "Jan'20",
-    cover: require('../assets/month-art-cover/jan.jpg'),
+    cover: require("../assets/month-art-cover/jan.jpg"),
     info: (
       <ul>
         <li>Web Development Sessions</li>
@@ -12,7 +12,7 @@ export const timelineData = [
   },
   {
     month: "Feb'20",
-    cover: require('../assets/month-art-cover/feb.jpg'),
+    cover: require("../assets/month-art-cover/feb.jpg"),
     info: (
       <ul>
         <li>Hour Of Code</li>
@@ -31,7 +31,7 @@ export const timelineData = [
   // },
   {
     month: "Apr'20",
-    cover: require('../assets/month-art-cover/apr.jpg'),
+    cover: require("../assets/month-art-cover/apr.jpg"),
     info: (
       <ul>
         <li>Distinguished Speaker Program</li>
@@ -42,7 +42,7 @@ export const timelineData = [
   },
   {
     month: "May-Jul'20",
-    cover: require('../assets/month-art-cover/jul.jpg'),
+    cover: require("../assets/month-art-cover/jul.jpg"),
     info: (
       <ul>
         <li>Team Hiring</li>
@@ -51,7 +51,7 @@ export const timelineData = [
   },
   {
     month: "Aug'20",
-    cover: require('../assets/month-art-cover/aug.jpg'),
+    cover: require("../assets/month-art-cover/aug.jpg"),
     info: (
       <ul>
         <li>Summer DSP by Mr. Ankit Kariryaa</li>
@@ -62,7 +62,7 @@ export const timelineData = [
   },
   {
     month: "Sep'20",
-    cover: require('../assets/month-art-cover/sep.jpg'),
+    cover: require("../assets/month-art-cover/sep.jpg"),
     info: (
       <ul>
         <li>Project Showdown (Final Round)</li>
@@ -75,7 +75,7 @@ export const timelineData = [
   },
   {
     month: "Oct'20",
-    cover: require('../assets/month-art-cover/oct.jpg'),
+    cover: require("../assets/month-art-cover/oct.jpg"),
     info: (
       <ul>
         <li>Fun Events (Meme Wars, Video Editing Contest)</li>
@@ -85,7 +85,7 @@ export const timelineData = [
   },
   {
     month: "Nov'20",
-    cover: require('../assets/month-art-cover/nov.jpg'),
+    cover: require("../assets/month-art-cover/nov.jpg"),
     info: (
       <ul>
         <li>
@@ -103,7 +103,7 @@ export const timelineData = [
   },
   {
     month: "Dec'20",
-    cover: require('../assets/month-art-cover/dec.jpg'),
+    cover: require("../assets/month-art-cover/dec.jpg"),
     info: (
       <ul>
         <li>Hour Of Code</li>
@@ -112,7 +112,7 @@ export const timelineData = [
   },
   {
     month: "Jan'21",
-    cover: require('../assets/month-art-cover/jan.jpg'),
+    cover: require("../assets/month-art-cover/jan.jpg"),
     info: (
       <ul>
         <li>Informal Freshers' Orientation</li>
@@ -121,7 +121,7 @@ export const timelineData = [
   },
   {
     month: "Feb'21",
-    cover: require('../assets/month-art-cover/feb.jpg'),
+    cover: require("../assets/month-art-cover/feb.jpg"),
     info: (
       <ul>
         <li>Web Development Session 1 - 27th Feb</li>
@@ -130,7 +130,7 @@ export const timelineData = [
   },
   {
     month: "Mar'21",
-    cover: require('../assets/month-art-cover/mar.jpg'),
+    cover: require("../assets/month-art-cover/mar.jpg"),
     info: (
       <ul>
         <li>Web Development Session 2 - 20th March</li>
@@ -139,3 +139,5 @@ export const timelineData = [
     )
   }
 ];
+
+export const timelineData = timeline.reverse();

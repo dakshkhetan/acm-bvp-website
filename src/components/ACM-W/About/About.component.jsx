@@ -1,22 +1,22 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import Fade from "react-reveal/Fade";
 
-import { ReactComponent as Image } from '../../../assets/illustrations/introduction.svg';
+import { ReactComponent as Image } from "../../../assets/illustrations/introduction.svg";
 
-import './About.styles.scss';
+import "./About.styles.scss";
 
 const About = () => {
   return (
     <React.Fragment>
-      <section id='about' className='section section-acmw-about'>
-        <div className='section-content'>
-          <div className='info'>
+      <section id="about" className="section section-acmw-about">
+        <div className="section-content">
+          <div className="info">
             <Fade bottom delay={200}>
-              <h2 className='heading'>About ACM-W</h2>
+              <h2 className="heading">About ACM-W</h2>
             </Fade>
 
             <Fade bottom delay={300}>
-              <p className='text'>
+              <p className="text">
                 Founded in 2015, ACM-W BVP has had a total of 100+ members until
                 date and has always advocated for the technical upliftment of
                 women. Affiliated with the global organisation of ACM–W, we aim
@@ -27,8 +27,8 @@ const About = () => {
           </div>
 
           <Fade right delay={400}>
-            <div className='illustration-container'>
-              <div className='illustration'>
+            <div className="illustration-container">
+              <div className="illustration">
                 <Image />
               </div>
             </div>

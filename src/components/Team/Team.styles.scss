@@ -35,7 +35,7 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
+  @media only screen and (max-width: 768px) {
     height: auto !important;
 
     .section-content {
@@ -59,10 +59,8 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     .section-content {
-
       .members {
         grid-template-columns: 1fr;
         grid-gap: 0;
@@ -87,7 +85,6 @@
   }
 
   &.dark {
-
     .section-content {
       .members {
         .member {

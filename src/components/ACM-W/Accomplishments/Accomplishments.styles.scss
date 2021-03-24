@@ -97,8 +97,7 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
-
+  @media only screen and (max-width: 768px) {
     .section-content {
       padding-bottom: 10px;
 
@@ -115,7 +114,6 @@
         }
 
         .illustration-container {
-
           .illustration {
             width: 300px;
           }
@@ -123,7 +121,6 @@
       }
 
       .accomplishments {
-
         .accomplishment {
           margin-top: 50px;
 
@@ -178,8 +175,7 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     padding: 15px 5% 120px !important;
 
     .section-heading {
@@ -189,7 +185,6 @@
     }
 
     .section-content {
-
       .info {
         width: 90%;
         margin: 0 0 30px;
@@ -202,7 +197,6 @@
         }
 
         .illustration-container {
-
           .illustration {
             width: 220px;
           }
@@ -210,9 +204,7 @@
       }
 
       .accomplishments {
-
         .accomplishment {
-
           .title {
             font-size: 1.6rem;
           }

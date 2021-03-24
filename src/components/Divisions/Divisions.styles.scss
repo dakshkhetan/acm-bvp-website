@@ -1,5 +1,4 @@
 .section-divisions {
-
   .section-heading {
     margin-bottom: 10px;
   }
@@ -48,7 +47,7 @@
     }
   }
 
-  @media only screen and (max-width : 768px) {
+  @media only screen and (max-width: 768px) {
     height: auto !important;
 
     .section-content {
@@ -80,8 +79,7 @@
     }
   }
 
-  @media only screen and (max-width : 425px) {
-
+  @media only screen and (max-width: 425px) {
     .section-heading {
       margin-bottom: 30px;
     }

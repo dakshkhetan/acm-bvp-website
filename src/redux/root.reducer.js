@@ -1,13 +1,13 @@
-import { combineReducers } from 'redux';
-import { persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import { combineReducers } from "redux";
+import { persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
-import darkModeReducer from './dark-mode/dark-mode.reducer';
+import darkModeReducer from "./dark-mode/dark-mode.reducer";
 
 const persistConfig = {
-  key: 'root',
+  key: "root",
   storage,
-  whitelist: ['theme']
+  whitelist: ["theme"]
 };
 
 const rootReducer = combineReducers({

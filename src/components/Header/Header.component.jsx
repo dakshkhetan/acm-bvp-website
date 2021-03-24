@@ -1,23 +1,23 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
+import React from "react";
+import { Link, withRouter } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { connect } from "react-redux";
+import { compose } from "redux";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-import { toggleDarkMode } from '../../redux/dark-mode/dark-mode.action';
+import { toggleDarkMode } from "../../redux/dark-mode/dark-mode.action";
 
-import Toggle from '../Toggle/Toggle';
-import SideDrawer from '../SideDrawer/SideDrawer.component';
-import Backdrop from '../Backdrop/Backdrop.component';
+import Toggle from "../Toggle/Toggle";
+import SideDrawer from "../SideDrawer/SideDrawer.component";
+import Backdrop from "../Backdrop/Backdrop.component";
 
-import logo from '../../assets/acm-logo/ACM-BVP-logo.png';
-import sun from '../../assets/illustrations/sun.png';
-import moon from '../../assets/illustrations/moon.png';
+import logo from "../../assets/acm-logo/ACM-BVP-logo.png";
+import sun from "../../assets/illustrations/sun.png";
+import moon from "../../assets/illustrations/moon.png";
 
-import './Header.styles.scss';
+import "./Header.styles.scss";
 
 class Header extends React.Component {
   state = {
@@ -28,16 +28,16 @@ class Header extends React.Component {
     const { location, history } = this.props;
     const { sideDrawerOpen } = this.state;
     sideDrawerOpen && this.closeSideDrawer();
-    location.pathname === '/' ? scroll.scrollToTop() : history.push('/');
+    location.pathname === "/" ? scroll.scrollToTop() : history.push("/");
   };
 
   scrollToTopACMW = () => {
     const { location, history } = this.props;
     const { sideDrawerOpen } = this.state;
     sideDrawerOpen && this.closeSideDrawer();
-    location.pathname === '/acm-w'
+    location.pathname === "/acm-w"
       ? scroll.scrollToTop()
-      : history.push('/acm-w');
+      : history.push("/acm-w");
   };
 
   openSideDrawer = () => {
@@ -53,27 +53,27 @@ class Header extends React.Component {
   };
 
   darkModeToggle = () => (
-    <span className='dark-mode-toggle'>
+    <span className="dark-mode-toggle">
       <Toggle
         icons={{
           checked: (
             <img
               src={moon}
-              alt='moon'
-              width='16'
-              height='16'
-              role='presentation'
-              style={{ pointerEvents: 'none' }}
+              alt="moon"
+              width="16"
+              height="16"
+              role="presentation"
+              style={{ pointerEvents: "none" }}
             />
           ),
           unchecked: (
             <img
               src={sun}
-              alt='sun'
-              width='16'
-              height='16'
-              role='presentation'
-              style={{ pointerEvents: 'none' }}
+              alt="sun"
+              width="16"
+              height="16"
+              role="presentation"
+              style={{ pointerEvents: "none" }}
             />
           )
         }}
@@ -85,9 +85,9 @@ class Header extends React.Component {
 
   headerOption = (option) => {
     const { location, history } = this.props;
-    return location.pathname === '/' ? (
+    return location.pathname === "/" ? (
       <ScrollLink
-        activeClass='active'
+        activeClass="active"
         to={option}
         spy={true}
         smooth={true}
@@ -112,10 +112,10 @@ class Header extends React.Component {
       <span className={`${className} hover`} onClick={() => this.scrollToTop()}>
         Home
       </span>
-      <Link to='/events' className={`${className} hover`}>
+      <Link to="/events" className={`${className} hover`}>
         Events
       </Link>
-      <Link to='/blogs' className={`${className} hover`}>
+      <Link to="/blogs" className={`${className} hover`}>
         Blogs
       </Link>
       <span
@@ -124,11 +124,11 @@ class Header extends React.Component {
       >
         ACM-W
       </span>
-      <Link to='/dsp' className={`${className} hover`}>
+      <Link to="/dsp" className={`${className} hover`}>
         DSP
       </Link>
-      {this.headerOption('faq')}
-      {this.headerOption('contact')}
+      {this.headerOption("faq")}
+      {this.headerOption("contact")}
       {this.darkModeToggle()}
     </React.Fragment>
   );
@@ -138,21 +138,21 @@ class Header extends React.Component {
     const { darkMode } = this.props;
 
     return (
-      <nav className={`header ${darkMode ? 'dark' : ''}`}>
-        <div className='logo-container'>
+      <nav className={`header ${darkMode ? "dark" : ""}`}>
+        <div className="logo-container">
           <img
             src={logo}
-            alt='logo'
-            className='logo'
+            alt="logo"
+            className="logo"
             onClick={this.scrollToTop}
           />
         </div>
 
-        <div className='options'>{this.headerOptions('option')}</div>
+        <div className="options">{this.headerOptions("option")}</div>
 
-        <div className='sidedrawer-btn'>
+        <div className="sidedrawer-btn">
           {this.darkModeToggle()}
-          <span className='toggle' onClick={this.openSideDrawer}>
+          <span className="toggle" onClick={this.openSideDrawer}>
             <FontAwesomeIcon icon={faBars} />
           </span>
         </div>

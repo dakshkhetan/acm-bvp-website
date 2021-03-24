@@ -1,26 +1,26 @@
-import React from 'react';
+import React from "react";
 
 export const FAQData = [
   {
-    question: 'How do I become a part of ACM?',
+    question: "How do I become a part of ACM?",
     answer:
-      'To become a part of ACM, you need to get yourself registered by any team member. For more details, you can write on the website or join the ACM WhatsApp group.',
+      "To become a part of ACM, you need to get yourself registered by any team member. For more details, you can write on the website or join the ACM WhatsApp group.",
     open: false
   },
   {
-    question: 'Do I have to pay for membership of ACM and ACM-W separately?',
+    question: "Do I have to pay for membership of ACM and ACM-W separately?",
     answer:
       "No, you don't have to pay extra for ACM-W. It is a division of ACM but women centric.",
     open: false
   },
   {
-    question: 'Can I join ACM even if I am not very technically sound?',
+    question: "Can I join ACM even if I am not very technically sound?",
     answer:
       "Yes, everyone is welcomed at ACM. The society's aim is to help the person develop his or her technical skills with time.",
     open: false
   },
   {
-    question: 'What benefits are available for student members?',
+    question: "What benefits are available for student members?",
     answer: (
       <ul>
         <li>The student members get access to weekly technical newspaper.</li>
@@ -37,12 +37,12 @@ export const FAQData = [
     open: false
   },
   {
-    question: 'How long is my membership valid?',
-    answer: 'The membership is valid till 1 year.',
+    question: "How long is my membership valid?",
+    answer: "The membership is valid till 1 year.",
     open: false
   },
   {
-    question: 'What are some common student chapter activities?',
+    question: "What are some common student chapter activities?",
     answer: (
       <ul>
         <li>

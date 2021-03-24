@@ -1,7 +1,7 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import Fade from "react-reveal/Fade";
 
-import { ReactComponent as Divider } from '../../../assets/illustrations/section-divider.svg';
+import { ReactComponent as Divider } from "../../../assets/illustrations/section-divider.svg";
 
 const Accomplishment = ({ accomplishment }) => {
   const { title, date, details, className } = accomplishment;
@@ -10,10 +10,10 @@ const Accomplishment = ({ accomplishment }) => {
     <React.Fragment>
       <div className={`accomplishment ${className}`}>
         <Fade bottom delay={150}>
-          <span className='title'>{title}</span>
+          <span className="title">{title}</span>
         </Fade>
         <Fade bottom delay={250}>
-          <span className='date'>{date}</span>
+          <span className="date">{date}</span>
         </Fade>
         <Fade bottom delay={350}>
           <p>{details}</p>
@@ -21,8 +21,8 @@ const Accomplishment = ({ accomplishment }) => {
       </div>
 
       <Fade delay={400}>
-        <div className='divider-container'>
-          <Divider className='divider' />
+        <div className="divider-container">
+          <Divider className="divider" />
         </div>
       </Fade>
     </React.Fragment>

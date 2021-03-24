@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 8px 6%;
   z-index: 1000;
 
@@ -64,7 +64,7 @@
 
       &:before,
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -3px;
         width: 0px;

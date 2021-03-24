@@ -1,78 +1,78 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faLinkedinIn,
   faGithub,
   faFacebook,
   faInstagram
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
-import './Footer.styles.scss';
+import "./Footer.styles.scss";
 
 const Footer = () => {
   return (
-    <section id='footer' className='footer'>
-      <div className='social-icons'>
+    <section id="footer" className="footer">
+      <div className="social-icons">
         <a
-          href='https://www.instagram.com/acm.bvp'
-          className='social-link'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://www.instagram.com/acm.bvp"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faInstagram} className='icon instagram' />
+          <FontAwesomeIcon icon={faInstagram} className="icon instagram" />
         </a>
         <a
-          href='https://twitter.com/acmbvp'
-          className='social-link'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://twitter.com/acmbvp"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faTwitter} className='icon twitter' />
+          <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
         </a>
         <a
-          href='https://in.linkedin.com/organization-guest/company/acmbvp'
-          className='social-link'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://in.linkedin.com/organization-guest/company/acmbvp"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} className='icon linkedin' />
+          <FontAwesomeIcon icon={faLinkedinIn} className="icon linkedin" />
         </a>
         <a
-          href='https://github.com/acmbvp'
-          className='social-link'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://github.com/acmbvp"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} className='icon github' />
+          <FontAwesomeIcon icon={faGithub} className="icon github" />
         </a>
         <a
-          href='https://www.facebook.com/acmbvp'
-          className='social-link'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://www.facebook.com/acmbvp"
+          className="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faFacebook} className='icon facebook' />
+          <FontAwesomeIcon icon={faFacebook} className="icon facebook" />
         </a>
       </div>
 
-      <h1 className='heading'>COPYRIGHT © {new Date().getFullYear()}</h1>
-      <p className='sub-heading'>
-        Powered by <a href='https://bvcoe.acm.org/'>ACM BVP</a>. All rights
+      <h1 className="heading">COPYRIGHT © {new Date().getFullYear()}</h1>
+      <p className="sub-heading">
+        Powered by <a href="https://bvcoe.acm.org/">ACM BVP</a>. All rights
         reserved.
       </p>
-      <p className='sub-heading code-of-conduct'>
-        <Link to='/code-of-conduct'>Code of Conduct</Link>
+      <p className="sub-heading code-of-conduct">
+        <Link to="/code-of-conduct">Code of Conduct</Link>
       </p>
-      <p className='sub-heading credit'>
-        Designed & developed by{' '}
+      <p className="sub-heading credit">
+        Designed & developed by{" "}
         <a
-          href='https://dakshkhetan.now.sh'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='credit-link underline'
+          href="https://dakshkhetan.now.sh"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="credit-link underline"
         >
           Daksh Khetan
         </a>

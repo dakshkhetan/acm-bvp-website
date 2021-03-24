@@ -1,14 +1,14 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faLinkedinIn,
   faGithub
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
-import DisplayImagePlaceholder from '../../assets/display-pics/displayPicTemplate.png';
+import DisplayImagePlaceholder from "../../assets/display-pics/displayPicTemplate.png";
 
-import './Person.styles.scss';
+import "./Person.styles.scss";
 
 const Person = ({ member }) => {
   const {
@@ -21,50 +21,50 @@ const Person = ({ member }) => {
   } = member;
 
   return (
-    <div className='member'>
-      <div className='img-container'>
-        <div className='display-pic'>
+    <div className="member">
+      <div className="img-container">
+        <div className="display-pic">
           {displayPicSrc ? (
-            <img src={displayPicSrc} alt='profile pic' />
+            <img src={displayPicSrc} alt="profile pic" />
           ) : (
-            <img src={DisplayImagePlaceholder} alt='profile pic' />
+            <img src={DisplayImagePlaceholder} alt="profile pic" />
           )}
         </div>
       </div>
-      <span className='name'>{name}</span>
-      <span className='position'>{position}</span>
-      <div className='social-icons'>
+      <span className="name">{name}</span>
+      <span className="position">{position}</span>
+      <div className="social-icons">
         {linkedInURL && (
           <a
             href={linkedInURL}
-            className='social-link'
-            target='_blank'
-            rel='noopener noreferrer'
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              className='icon linkedin mr-10'
+              className="icon linkedin mr-10"
             />
           </a>
         )}
         {githubURL && (
           <a
             href={githubURL}
-            className='social-link'
-            target='_blank'
-            rel='noopener noreferrer'
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} className='icon github m-8' />
+            <FontAwesomeIcon icon={faGithub} className="icon github m-8" />
           </a>
         )}
         {twitterURL && (
           <a
             href={twitterURL}
-            className='social-link'
-            target='_blank'
-            rel='noopener noreferrer'
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTwitter} className='icon twitter' />
+            <FontAwesomeIcon icon={faTwitter} className="icon twitter" />
           </a>
         )}
       </div>

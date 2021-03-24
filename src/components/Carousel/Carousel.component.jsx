@@ -1,18 +1,18 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import './Carousel.styles.scss';
+import "./Carousel.styles.scss";
 
 const Carousel = ({ images }) => {
   const settings = {
-    className: 'center',
+    className: "center",
     centerMode: true,
     dots: true,
     infinite: true,
-    centerPadding: '60px',
+    centerPadding: "60px",
     slidesToShow: 1,
     speed: 1000,
     autoplay: true,
@@ -25,7 +25,7 @@ const Carousel = ({ images }) => {
         settings: {
           slidesToShow: 1,
           variableWidth: true,
-          centerPadding: '0',
+          centerPadding: "0",
           infinite: true,
           dots: true
         }
@@ -47,12 +47,12 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className='carousel slider-container'>
+    <div className="carousel slider-container">
       <Slider {...settings}>
         {images.map((image, i) => (
-          <div key={i} className='slide'>
-            <div className='image-container'>
-              <img src={image} alt='workshop' />
+          <div key={i} className="slide">
+            <div className="image-container">
+              <img src={image} alt="workshop" />
             </div>
           </div>
         ))}
