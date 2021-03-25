@@ -136,7 +136,7 @@
             }
 
             ul {
-              li:::before {
+              li::before {
                 content: "•";
                 color: #539dfe;
                 display: inline-block;
@@ -156,7 +156,7 @@
           &:nth-child(even) {
             .timeline-item-content {
               ul {
-                li:::after {
+                li::after {
                   content: "•";
                   color: #539dfe;
                   display: inline-block;
@@ -221,7 +221,7 @@
               }
 
               ul {
-                li:::before {
+                li::before {
                   content: "•";
                   color: #539dfe;
                   display: inline-block;
