@@ -23,7 +23,7 @@
         padding: 15px;
         background-color: #fff;
         border-radius: 8px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
         .faq-question {
           position: relative;
@@ -36,7 +36,7 @@
             content: "";
             position: absolute;
             top: 50%;
-            right: 0px;
+            right: 0;
             transform: translateY(-50%);
             width: 25px;
             height: 25px;
@@ -57,7 +57,7 @@
           font-size: 1.07rem;
           color: darken(#539dfe, 15%);
 
-          P {
+          p {
             margin: 0;
           }
 

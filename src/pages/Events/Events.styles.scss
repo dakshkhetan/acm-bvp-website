@@ -192,13 +192,13 @@
     .workshop-container {
       .carousel.slider-container {
         .slick-slider.center {
-          .slick-next:before,
-          .slick-prev:before {
+          .slick-next::before,
+          .slick-prev::before {
             background-color: unset;
             color: #fff;
           }
 
-          .slick-dots li button:before {
+          .slick-dots li button::before {
             color: #fff;
           }
         }

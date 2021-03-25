@@ -57,7 +57,7 @@
     font-weight: 400;
     position: relative;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       width: 100%;
