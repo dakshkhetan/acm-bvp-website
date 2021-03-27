@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import ProgressiveImage from "react-progressive-image";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,7 +53,15 @@ const Carousel = ({ images }) => {
         {images.map((image, i) => (
           <div key={i} className="slide">
             <div className="image-container">
-              <img src={image} alt="workshop" />
+              <ProgressiveImage src={image} placeholder="">
+                {(src, loading) => {
+                  return loading ? (
+                    <div className="loading-spinner" />
+                  ) : (
+                    <img src={src} alt="workshop" />
+                  );
+                }}
+              </ProgressiveImage>
             </div>
           </div>
         ))}

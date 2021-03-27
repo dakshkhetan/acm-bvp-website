@@ -1,10 +1,14 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { withRouter } from "react-router-dom";
+import ProgressiveImage from "react-progressive-image";
 
 import image1 from "../../assets/acm-logo/ACM-W-logo.png";
 import image2_light from "../../assets/acm-logo/ACM-Parivartan-light.jpeg";
 import image2_dark from "../../assets/acm-logo/ACM-Parivartan-dark.jpeg";
+import image1Placeholder from "../../assets/acm-logo/compressed/ACM-W-logo.png";
+import image2_lightPlaceholder from "../../assets/acm-logo/compressed/ACM-Parivartan-light.png";
+import image2_darkPlaceholder from "../../assets/acm-logo/compressed/ACM-Parivartan-dark.png";
 import { ReactComponent as Divider } from "./../../assets/illustrations/divider.svg";
 
 import "./Divisions.styles.scss";
@@ -23,12 +27,16 @@ const Divisions = ({ history, darkMode }) => {
         <div className="info-acmw">
           <Fade bottom delay={150}>
             <div className="image-container">
-              <img
-                src={image1}
-                className="image-acmw"
-                alt="acm-w"
-                onClick={() => history.push("/acm-w")}
-              />
+              <ProgressiveImage src={image1} placeholder={image1Placeholder}>
+                {(src) => (
+                  <img
+                    src={src}
+                    className="image-acmw"
+                    alt="acm-w"
+                    onClick={() => history.push("/acm-w")}
+                  />
+                )}
+              </ProgressiveImage>
             </div>
           </Fade>
           <Fade bottom delay={250}>
@@ -47,11 +55,16 @@ const Divisions = ({ history, darkMode }) => {
         <div className="info-acmp">
           <Fade bottom delay={150}>
             <div className="image-container">
-              <img
+              <ProgressiveImage
                 src={darkMode ? image2_dark : image2_light}
-                className="image-acmp"
-                alt="acm-parivartan"
-              />
+                placeholder={
+                  darkMode ? image2_darkPlaceholder : image2_lightPlaceholder
+                }
+              >
+                {(src) => (
+                  <img src={src} className="image-acmp" alt="acm-parivartan" />
+                )}
+              </ProgressiveImage>
             </div>
           </Fade>
           <Fade bottom delay={250}>

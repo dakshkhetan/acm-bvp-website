@@ -3,6 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { connect } from "react-redux";
 import { compose } from "redux";
+import ProgressiveImage from "react-progressive-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +15,7 @@ import SideDrawer from "../SideDrawer/SideDrawer.component";
 import Backdrop from "../Backdrop/Backdrop.component";
 
 import logo from "../../assets/acm-logo/ACM-BVP-logo.png";
+import logoPlaceholder from "../../assets/acm-logo/compressed/ACM-BVP-logo.png";
 import sun from "../../assets/illustrations/sun.png";
 import moon from "../../assets/illustrations/moon.png";
 
@@ -140,12 +142,16 @@ class Header extends React.Component {
     return (
       <nav className={`header ${darkMode ? "dark" : ""}`}>
         <div className="logo-container">
-          <img
-            src={logo}
-            alt="logo"
-            className="logo"
-            onClick={this.scrollToTop}
-          />
+          <ProgressiveImage src={logo} placeholder={logoPlaceholder}>
+            {(src) => (
+              <img
+                src={src}
+                alt="logo"
+                className="logo"
+                onClick={this.scrollToTop}
+              />
+            )}
+          </ProgressiveImage>
         </div>
 
         <div className="options">{this.headerOptions("option")}</div>

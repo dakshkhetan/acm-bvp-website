@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import ProgressiveImage from "react-progressive-image";
 
 import SpeakerImage1 from "../../../assets/dsp-speakers/speaker2019.png";
 import SpeakerImage2 from "../../../assets/dsp-speakers/speaker2020.png";
@@ -39,7 +40,17 @@ const Speakers = ({ darkMode }) => {
           <div className="speaker">
             <Fade delay={150}>
               <div className="image-container">
-                <img src={SpeakerImage3} alt="speaker" />
+                <ProgressiveImage src={SpeakerImage3} placeholder="">
+                  {(src, loading) => {
+                    return loading ? (
+                      <div className="loader-container">
+                        <div className="loading-spinner" />
+                      </div>
+                    ) : (
+                      <img src={src} alt="speaker" />
+                    );
+                  }}
+                </ProgressiveImage>
               </div>
             </Fade>
             <Fade delay={250}>
@@ -62,7 +73,17 @@ const Speakers = ({ darkMode }) => {
           <div className="speaker">
             <Fade delay={150}>
               <div className="image-container">
-                <img src={SpeakerImage2} alt="speaker" />
+                <ProgressiveImage src={SpeakerImage2} placeholder="">
+                  {(src, loading) => {
+                    return loading ? (
+                      <div className="loader-container">
+                        <div className="loading-spinner" />
+                      </div>
+                    ) : (
+                      <img src={src} alt="speaker" />
+                    );
+                  }}
+                </ProgressiveImage>
               </div>
             </Fade>
             <Fade delay={250}>
@@ -86,7 +107,17 @@ const Speakers = ({ darkMode }) => {
           <div className="speaker">
             <Fade delay={150}>
               <div className="image-container">
-                <img src={SpeakerImage1} alt="speaker" />
+                <ProgressiveImage src={SpeakerImage1} placeholder="">
+                  {(src, loading) => {
+                    return loading ? (
+                      <div className="loader-container">
+                        <div className="loading-spinner" />
+                      </div>
+                    ) : (
+                      <img src={src} alt="speaker" />
+                    );
+                  }}
+                </ProgressiveImage>
               </div>
             </Fade>
             <Fade delay={250}>

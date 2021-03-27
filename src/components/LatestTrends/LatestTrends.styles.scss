@@ -37,6 +37,12 @@
           border-radius: 50%;
           border: 5px solid #539dfe;
         }
+
+        .loader-container {
+          width: 100px;
+          height: 100px;
+          position: relative;
+        }
       }
     }
   }

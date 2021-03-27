@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import ProgressiveImage from "react-progressive-image";
 
 import WebIcon from "../../assets/technology/web-icon.png";
 import AndroidIcon from "../../assets/technology/android-icon.png";
@@ -10,6 +11,24 @@ import BlockchainIcon from "../../assets/technology/blockchain-icon.png";
 import { ReactComponent as Illustration } from "../../assets/illustrations/reading-book.svg";
 
 import "./LatestTrends.styles.scss";
+
+const TrendImage = (props) => {
+  return (
+    <div className="image-container">
+      <ProgressiveImage src={props.src} placeholder="">
+        {(src, loading) => {
+          return loading ? (
+            <div className="loader-container">
+              <div className="loading-spinner" />
+            </div>
+          ) : (
+            <img src={src} alt={props.alt} />
+          );
+        }}
+      </ProgressiveImage>
+    </div>
+  );
+};
 
 const LatestTrends = ({ darkMode }) => {
   return (
@@ -28,26 +47,14 @@ const LatestTrends = ({ darkMode }) => {
       <div className="section-content">
         <div className="tech-container">
           <Fade bottom delay={150}>
-            <div className="image-container">
-              <img src={WebIcon} alt="web-development" />
-            </div>
-            <div className="image-container">
-              <img src={AndroidIcon} alt="android" />
-            </div>
-            <div className="image-container">
-              <img src={iOSIcon} alt="ios" />
-            </div>
+            <TrendImage src={WebIcon} alt="web-development" />
+            <TrendImage src={AndroidIcon} alt="android" />
+            <TrendImage src={iOSIcon} alt="ios" />
           </Fade>
           <Fade bottom delay={250}>
-            <div className="image-container">
-              <img src={MLIcon} alt="machine-learning" />
-            </div>
-            <div className="image-container">
-              <img src={RoboticsIcon} alt="robotics" />
-            </div>
-            <div className="image-container">
-              <img src={BlockchainIcon} alt="blockchain" />
-            </div>
+            <TrendImage src={MLIcon} alt="machine-learning" />
+            <TrendImage src={RoboticsIcon} alt="robotics" />
+            <TrendImage src={BlockchainIcon} alt="blockchain" />
           </Fade>
         </div>
       </div>

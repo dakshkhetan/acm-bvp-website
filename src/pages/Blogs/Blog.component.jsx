@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import ProgressiveImage from "react-progressive-image";
 
 const Blog = ({ blog }) => {
   const { image, code, date, title, description, author, link } = blog;
@@ -15,7 +16,17 @@ const Blog = ({ blog }) => {
     <React.Fragment>
       <div className={`blog ${code}`}>
         <Fade delay={300}>
-          <img src={image} alt="cover" />
+          <ProgressiveImage src={image} placeholder="">
+            {(src, loading) => {
+              return loading ? (
+                <div className="loader-container">
+                  <div className="loading-spinner" />
+                </div>
+              ) : (
+                <img src={src} alt="cover" />
+              );
+            }}
+          </ProgressiveImage>
         </Fade>
         <Fade delay={400}>
           <time>{date}</time>

@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import ProgressiveImage from "react-progressive-image";
 
 import Image1 from "../../../assets/dsp-sessions/session1.png";
 import Image2 from "../../../assets/dsp-sessions/session2.png";
@@ -22,7 +23,17 @@ const Sessions = ({ darkMode }) => {
         <div className="session">
           <Fade delay={150}>
             <div className="image-container">
-              <img src={Image1} alt="session" />
+              <ProgressiveImage src={Image1} placeholder="">
+                {(src, loading) => {
+                  return loading ? (
+                    <div className="loader-container">
+                      <div className="loading-spinner" />
+                    </div>
+                  ) : (
+                    <img src={src} alt="session" />
+                  );
+                }}
+              </ProgressiveImage>
             </div>
           </Fade>
           <div className="info">

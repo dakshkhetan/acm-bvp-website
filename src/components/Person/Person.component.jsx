@@ -1,4 +1,6 @@
 import React from "react";
+import ProgressiveImage from "react-progressive-image";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -25,7 +27,17 @@ const Person = ({ member }) => {
       <div className="img-container">
         <div className="display-pic">
           {displayPicSrc ? (
-            <img src={displayPicSrc} alt="profile pic" />
+            <ProgressiveImage src={displayPicSrc} placeholder="">
+              {(src, loading) => {
+                return loading ? (
+                  <div className="loader-container">
+                    <div className="loading-spinner" />
+                  </div>
+                ) : (
+                  <img src={src} alt="profile pic" />
+                );
+              }}
+            </ProgressiveImage>
           ) : (
             <img src={DisplayImagePlaceholder} alt="profile pic" />
           )}

@@ -13,3 +13,29 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.loading-spinner {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #539dfe;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-radius: 22px;
+  animation: rotate 1s-spinner infinite linear;
+  -webkit-animation: rotate-spinner 1s infinite linear;
+  position: absolute;
+  left: calc(50% - 22px);
+  top: calc(50% - 22px);
+}
+
+@keyframes rotate-spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

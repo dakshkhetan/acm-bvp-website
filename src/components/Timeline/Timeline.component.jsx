@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import ProgressiveImage from "react-progressive-image";
 import { animateScroll as scroll } from "react-scroll";
 
 import { timelineData } from "../../data/timeline.data";
+
+import preloadImage from "../../assets/month-art-cover/placeholder.jpg";
 
 import "./Timeline.styles.scss";
 
@@ -10,7 +13,9 @@ const TimelineItem = ({ data }) => (
   <div className="timeline-item">
     <div className="timeline-item-content">
       <Fade delay={150}>
-        <img src={data.cover} alt="art" />
+        <ProgressiveImage src={data.cover} placeholder={preloadImage}>
+          {(src) => <img src={src} alt="art" />}
+        </ProgressiveImage>
         <time>{data.month}</time>
         {data.info}
         <span className="circle" />

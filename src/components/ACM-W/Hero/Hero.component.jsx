@@ -1,12 +1,14 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import ParticlesBg from "particles-bg";
+import ProgressiveImage from "react-progressive-image";
 import { Link as ScrollLink } from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 import logo from "../../../assets/acm-logo/ACM-W-logo.png";
+import logoPlaceholder from "../../../assets/acm-logo/compressed/ACM-W-logo.png";
 
 import "./Hero.styles.scss";
 
@@ -20,7 +22,9 @@ const Hero = ({ darkMode }) => {
     >
       <Fade delay={200}>
         <div className="logo-container">
-          <img src={logo} alt="ACM-W logo" />
+          <ProgressiveImage src={logo} placeholder={logoPlaceholder}>
+            {(src) => <img src={src} alt="ACM-W logo" />}
+          </ProgressiveImage>
         </div>
       </Fade>
 
