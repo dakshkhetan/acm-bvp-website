@@ -12,10 +12,14 @@ import "./Timeline.styles.scss";
 const TimelineItem = ({ data }) => (
   <div className="timeline-item">
     <div className="timeline-item-content">
+      <ProgressiveImage src={data.cover} placeholder={preloadImage}>
+        {(src) => (
+          <Fade delay={150}>
+            <img src={src} alt="art" />
+          </Fade>
+        )}
+      </ProgressiveImage>
       <Fade delay={150}>
-        <ProgressiveImage src={data.cover} placeholder={preloadImage}>
-          {(src) => <img src={src} alt="art" />}
-        </ProgressiveImage>
         <time>{data.month}</time>
         {data.info}
         <span className="circle" />
