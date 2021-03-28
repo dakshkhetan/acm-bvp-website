@@ -20,15 +20,6 @@ const timeline = [
       </ul>
     )
   },
-  // {
-  //   month: "Mar'20",
-  //   cover: require('../assets/month-art-cover/mar.jpg'),
-  //   info: (
-  //     <ul>
-  //       <li>None</li>
-  //     </ul>
-  //   )
-  // },
   {
     month: "Apr'20",
     cover: require("../assets/month-art-cover/apr.jpg"),
@@ -134,7 +125,7 @@ const timeline = [
     info: (
       <ul>
         <li>Web Development Session 2 - 20th March</li>
-        <li>DSP'21 with Dr. Juan Wachs as the speaker (Coming Soon)</li>
+        <li>DSP'21 with Dr. Juan Wachs as the speaker - 25th March</li>
       </ul>
     )
   }
