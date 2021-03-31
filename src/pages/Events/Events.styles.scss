@@ -21,7 +21,7 @@
     a {
       color: darken(#539dfe, 20%);
       text-decoration: underline;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: 500;
     }
 
@@ -93,6 +93,15 @@
   }
 
   @media only screen and (max-width: 768px) {
+    .timeline-heading {
+      width: 90%;
+      text-align: center;
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+
     .section-content {
       padding-bottom: 180px;
 
@@ -132,12 +141,11 @@
 
     .timeline-heading {
       width: 90%;
-      text-align: center;
       padding: 0;
       margin-bottom: 50px;
 
       a {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
 

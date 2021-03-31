@@ -46,7 +46,17 @@ const Sessions = ({ darkMode }) => {
         <div className="session">
           <Fade delay={150}>
             <div className="image-container">
-              <img src={Image2} alt="session" />
+              <ProgressiveImage src={Image2} placeholder="">
+                {(src, loading) => {
+                  return loading ? (
+                    <div className="loader-container">
+                      <div className="loading-spinner" />
+                    </div>
+                  ) : (
+                    <img src={src} alt="session" />
+                  );
+                }}
+              </ProgressiveImage>
             </div>
           </Fade>
           <div className="info">
