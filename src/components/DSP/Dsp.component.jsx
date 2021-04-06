@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { animateScroll as scroll } from "react-scroll";
 
 import Hero from "./Hero/Hero.component";
@@ -13,7 +14,11 @@ const DSP = ({ darkMode }) => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
+      <Helmet>
+        <title>DSP | ACM BVP</title>
+      </Helmet>
+
       <section
         id="dsp"
         className={`section section-dsp ${darkMode ? "dark" : ""}`}
@@ -22,7 +27,7 @@ const DSP = ({ darkMode }) => {
         <Speakers darkMode={darkMode} />
         <Sessions darkMode={darkMode} />
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

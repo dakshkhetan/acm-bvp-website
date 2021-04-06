@@ -7,7 +7,7 @@ const Accomplishment = ({ accomplishment }) => {
   const { title, date, details, className } = accomplishment;
 
   return (
-    <React.Fragment>
+    <>
       <div className={`accomplishment ${className}`}>
         <Fade bottom delay={150}>
           <span className="title">{title}</span>
@@ -25,7 +25,7 @@ const Accomplishment = ({ accomplishment }) => {
           <Divider className="divider" />
         </div>
       </Fade>
-    </React.Fragment>
+    </>
   );
 };
 

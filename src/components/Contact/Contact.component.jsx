@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Fade from "react-reveal/Fade";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -7,12 +9,27 @@ import { ReactComponent as Image } from "../../assets/illustrations/contact.svg"
 import "./Contact.styles.scss";
 
 const Contact = ({ darkMode }) => {
+  let location = useLocation();
+
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
 
+  const setPageTitle = () =>
+    location.pathname === "/" ? (
+      <Helmet>
+        <title>ACM BVP</title>
+      </Helmet>
+    ) : (
+      <Helmet>
+        <title>Contact | ACM BVP</title>
+      </Helmet>
+    );
+
   return (
-    <React.Fragment>
+    <>
+      {setPageTitle()}
+
       <section
         id="contact"
         className={`section section-contact ${darkMode ? "dark" : ""}`}
@@ -56,7 +73,7 @@ const Contact = ({ darkMode }) => {
           </Fade>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -110,7 +110,7 @@ class Header extends React.Component {
   };
 
   headerOptions = (className) => (
-    <React.Fragment>
+    <>
       <span className={`${className} hover`} onClick={() => this.scrollToTop()}>
         Home
       </span>
@@ -132,7 +132,7 @@ class Header extends React.Component {
       {this.headerOption("faq")}
       {this.headerOption("contact")}
       {this.darkModeToggle()}
-    </React.Fragment>
+    </>
   );
 
   render() {

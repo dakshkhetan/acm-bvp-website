@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Fade from "react-reveal/Fade";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -193,7 +194,11 @@ const CodeOfConduct = ({ darkMode }) => {
   );
 
   return (
-    <React.Fragment>
+    <>
+      <Helmet>
+        <title>Code of Conduct | ACM BVP</title>
+      </Helmet>
+
       <section
         id="codeOfConduct"
         className={`section section-codeOfConduct ${darkMode ? "dark" : ""}`}
@@ -203,7 +208,7 @@ const CodeOfConduct = ({ darkMode }) => {
         </Fade>
         {content()}
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

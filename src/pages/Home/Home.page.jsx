@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import Hero from "../../components/Hero/Hero.component";
 import Workshops from "../../components/Workshops/Workshops.component";
@@ -16,15 +17,21 @@ const HomePage = ({ darkMode }) => {
   }, []);
 
   return (
-    <div className={`App ${darkMode ? "dark" : ""}`}>
-      <Hero darkMode={darkMode} />
-      <Workshops darkMode={darkMode} />
-      <Divisions darkMode={darkMode} />
-      <LatestTrends darkMode={darkMode} />
-      <Team darkMode={darkMode} />
-      <FAQs darkMode={darkMode} />
-      <Contact darkMode={darkMode} />
-    </div>
+    <>
+      <Helmet>
+        <title>ACM BVP</title>
+      </Helmet>
+
+      <div className={`App ${darkMode ? "dark" : ""}`}>
+        <Hero darkMode={darkMode} />
+        <Workshops darkMode={darkMode} />
+        <Divisions darkMode={darkMode} />
+        <LatestTrends darkMode={darkMode} />
+        <Team darkMode={darkMode} />
+        <FAQs darkMode={darkMode} />
+        <Contact darkMode={darkMode} />
+      </div>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const Blog = ({ blog }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className={`blog ${code}`}>
         <Fade delay={300}>
           <ProgressiveImage src={image} placeholder="">
@@ -46,7 +46,7 @@ const Blog = ({ blog }) => {
           </a>
         </Fade>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

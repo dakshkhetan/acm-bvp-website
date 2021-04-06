@@ -7,7 +7,7 @@ import "./About.styles.scss";
 
 const About = () => {
   return (
-    <React.Fragment>
+    <>
       <section id="about" className="section section-acmw-about">
         <div className="section-content">
           <div className="info">
@@ -35,7 +35,7 @@ const About = () => {
           </Fade>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

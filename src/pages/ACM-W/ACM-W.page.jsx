@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import Hero from "../../components/ACM-W/Hero/Hero.component";
 import About from "../../components/ACM-W/About/About.component";
@@ -14,13 +15,19 @@ const ACM_W = ({ darkMode }) => {
   }, []);
 
   return (
-    <div className={`acm-w ${darkMode ? "dark" : ""}`}>
-      <Hero darkMode={darkMode} />
-      <About />
-      <Vision />
-      <Accomplishments />
-      <RoadAhead />
-    </div>
+    <>
+      <Helmet>
+        <title>ACM-W BVP</title>
+      </Helmet>
+
+      <div className={`acm-w ${darkMode ? "dark" : ""}`}>
+        <Hero darkMode={darkMode} />
+        <About />
+        <Vision />
+        <Accomplishments />
+        <RoadAhead />
+      </div>
+    </>
   );
 };
 

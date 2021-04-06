@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { animateScroll as scroll } from "react-scroll";
@@ -17,7 +18,11 @@ const EventsPage = ({ darkMode }) => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
+      <Helmet>
+        <title>Events | ACM BVP</title>
+      </Helmet>
+
       <section
         id="events"
         className={`section section-events ${darkMode ? "dark" : ""}`}
@@ -47,7 +52,7 @@ const EventsPage = ({ darkMode }) => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

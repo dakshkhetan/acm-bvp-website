@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Fade from "react-reveal/Fade";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -16,7 +17,11 @@ const Blogs = ({ darkMode }) => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
+      <Helmet>
+        <title>Blogs | ACM BVP</title>
+      </Helmet>
+
       <section
         id="blogs"
         className={`section section-blogs ${darkMode ? "dark" : ""}`}
@@ -41,7 +46,7 @@ const Blogs = ({ darkMode }) => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

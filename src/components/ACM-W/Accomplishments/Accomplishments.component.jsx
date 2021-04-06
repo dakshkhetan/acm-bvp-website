@@ -13,7 +13,7 @@ import "./Accomplishments.styles.scss";
 
 const Accomplishments = () => {
   return (
-    <React.Fragment>
+    <>
       <section
         id="accomplishments"
         className="section section-acmw-accomplishments"
@@ -84,7 +84,7 @@ const Accomplishments = () => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

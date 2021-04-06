@@ -16,7 +16,7 @@ import CodeOfConduct from "./components/CodeOfConduct/CodeOfConduct.component";
 import Footer from "./components/Footer/Footer.component";
 
 const App = ({ darkMode }) => (
-  <React.Fragment>
+  <>
     <Header />
     <Switch>
       <Route exact path="/" render={() => <HomePage darkMode={darkMode} />} />
@@ -41,7 +41,7 @@ const App = ({ darkMode }) => (
       <Redirect to="/" />
     </Switch>
     <Footer />
-  </React.Fragment>
+  </>
 );
 
 const mapStateToProps = (state) => ({

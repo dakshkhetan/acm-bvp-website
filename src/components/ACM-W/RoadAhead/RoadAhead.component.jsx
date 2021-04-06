@@ -7,7 +7,7 @@ import "./RoadAhead.styles.scss";
 
 const RoadAhead = () => {
   return (
-    <React.Fragment>
+    <>
       <section id="road-ahead" className="section section-acmw-roadAhead">
         <Fade bottom delay={50}>
           <h1 className="section-heading">Road Ahead</h1>
@@ -45,7 +45,7 @@ const RoadAhead = () => {
           </Fade>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

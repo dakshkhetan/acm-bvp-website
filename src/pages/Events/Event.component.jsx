@@ -9,7 +9,7 @@ const Event = ({ workshop }) => {
   const { title, details, images } = workshop;
 
   return (
-    <React.Fragment>
+    <>
       <div className="workshop-container">
         <Fade bottom delay={100}>
           <Carousel images={images} />
@@ -28,7 +28,7 @@ const Event = ({ workshop }) => {
       <div className="divider-container">
         <Divider className="divider" />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@ import "./Vision.styles.scss";
 
 const Vision = () => {
   return (
-    <React.Fragment>
+    <>
       <section id="vision" className="section section-acmw-vision">
         <div className="section-content">
           <div className="info">
@@ -35,7 +35,7 @@ const Vision = () => {
           </Fade>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 
