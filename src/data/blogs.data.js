@@ -34,6 +34,17 @@ export const blogs = [
       "Google Sign-in is a secure way to authenticate users in mobile apps. This article basically deals with the implementation of Google Sign-In in Android Studio With Firebase using Kotlin programming language.",
     link: "https://medium.com/swlh/73cf6a5a989e",
     image: require("../assets/blogs/blog-3.jpg")
+  },
+  {
+    key: "4",
+    code: "blog-4",
+    date: "27th Apr'21",
+    title: "Top 5 technologies to kickstart...",
+    author: "Vaibhav Choudhary",
+    description:
+      "The trending technologies which are currently dominating the CS domain and can give you a good start.",
+    link: "https://medium.com/@vaibhavch29/829ce12c0b9f",
+    image: require("../assets/blogs/blog-4.jpg")
   }
 ];
 
