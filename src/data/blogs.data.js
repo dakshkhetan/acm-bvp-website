@@ -45,6 +45,17 @@ export const blogs = [
       "The trending technologies which are currently dominating the CS domain and can give you a good start.",
     link: "https://medium.com/@vaibhavch29/829ce12c0b9f",
     image: require("../assets/blogs/blog-4.jpg")
+  },
+  {
+    key: "5",
+    code: "blog-5",
+    date: "17th Jul'21",
+    title: "Things to remember if you're a beginner in Coding",
+    author: "Vaibhav Choudhary",
+    description:
+      "There are things, you should remember when you're a beginner in Coding...",
+    link: "https://medium.com/@vaibhavch29/ab4f0c1b6815",
+    image: require("../assets/blogs/blog-5.jpg")
   }
 ];
 
