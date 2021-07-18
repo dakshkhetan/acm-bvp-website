@@ -49,13 +49,24 @@ export const blogs = [
   {
     key: "5",
     code: "blog-5",
+    date: "9th May'21",
+    title: "How to make an awesome roadmap to become a web...",
+    author: "Vaibhav Choudhary",
+    description:
+      "Make yourself an awesome roadmap to become a web developer by learning through the journey of others!",
+    link: "https://medium.com/@vaibhavch29/571d3e1c0f23",
+    image: require("../assets/blogs/blog-5.jpg")
+  },
+  {
+    key: "6",
+    code: "blog-6",
     date: "17th Jul'21",
     title: "Things to remember if you're a beginner in Coding",
     author: "Vaibhav Choudhary",
     description:
       "There are things, you should remember when you're a beginner in Coding...",
     link: "https://medium.com/@vaibhavch29/ab4f0c1b6815",
-    image: require("../assets/blogs/blog-5.jpg")
+    image: require("../assets/blogs/blog-6.jpg")
   }
 ];
 
